@@ -1870,9 +1870,9 @@
     }
   ],
   "schema": "claimscope/rspack97-semantic-size/v1",
-  "snapshot_collected_at_utc": "2026-11-22T05:04:21Z",
+  "snapshot_collected_at_utc": "2026-11-22T05:09:13Z",
   "source_label_sha256": "c31616088cac4ea8d2369b942b78f08e39356250a0b452aba5c9402e05e070b9",
   "source_repository": "web-infra-dev/rspack",
-  "source_snapshot_sha256": "add04994a389c1e61a8e7b4c3179a244db9096b98cbf5e4d5b469d1e491097d5",
+  "source_snapshot_sha256": "1fa3c600fce11df25db40351494582ffb1513e3bf4eef1aac6229fbbb5645068",
   "study": "Rspack subset of 1,699 PRs from the pinned public Peng et al. label export"
 }

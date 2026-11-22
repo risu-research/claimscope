@@ -14,9 +14,9 @@
   "inventory_sha256": "039c8161e85c31940fd2c9333f21d8ae0a43219df694812538dfe45ebede776e",
   "replay_command": "python3 code/rspack97_semantic_audit.py --offline",
   "results_csv_sha256": "0785b3d475afc78e290089cf92712592000e9fc7a028a88ed76ee0870665db32",
-  "results_json_sha256": "8b3d92aeea14337a0e3d60acfc1224e86cccfe9f2d0e82e6a66fb2f489b09c07",
+  "results_json_sha256": "c0191b5b93a4ac8ac1ecf10ff5ed5521bd7044817cf3ae6b7d154683e2480e76",
   "rows": 97,
   "schema": "claimscope/rspack97-semantic-size/v1",
   "source_label_sha256": "c31616088cac4ea8d2369b942b78f08e39356250a0b452aba5c9402e05e070b9",
-  "source_snapshot_sha256": "add04994a389c1e61a8e7b4c3179a244db9096b98cbf5e4d5b469d1e491097d5"
+  "source_snapshot_sha256": "1fa3c600fce11df25db40351494582ffb1513e3bf4eef1aac6229fbbb5645068"
 }
