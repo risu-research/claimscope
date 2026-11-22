@@ -1,0 +1,90 @@
+name: Freeze and replay public Rspack 97 semantic evidence
+on:
+  push:
+    branches:
+      - audit/rspack97-frozen-semantic-20261122
+    paths:
+      - '.github/workflows/rspack97-semantic.yml'
+      - 'code/rspack97_semantic_audit.py'
+      - 'code/test_rspack97_semantic.py'
+      - 'evidence/rspack97_semantic_addendum_32.csv'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  frozen-public-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify preexisting public analysis
+        run: bash run_checks.sh
+      - name: Test 97-case frozen inputs and semantic parser
+        run: python -m unittest discover -s code -p 'test_rspack97_semantic.py' -v
+      - name: Collect 97 public GitHub PR discussions
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python code/rspack97_semantic_audit.py --collect
+      - name: Check deterministic offline replay
+        shell: bash
+        run: |
+          set -euo pipefail
+          sha256sum evidence/rspack97_semantic_public_snapshot.json results/rspack97_semantic_size_audit.json results/rspack97_semantic_size_audit.csv results/rspack97_semantic_manifest.json > before.sha256
+          python code/rspack97_semantic_audit.py --offline
+          sha256sum evidence/rspack97_semantic_public_snapshot.json results/rspack97_semantic_size_audit.json results/rspack97_semantic_size_audit.csv results/rspack97_semantic_manifest.json > after.sha256
+          diff -u before.sha256 after.sha256
+          python -m unittest discover -s code -p 'test_rspack97_semantic.py' -v
+      - name: Publication safety scan
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json,re
+          from pathlib import Path
+          path=Path('evidence/rspack97_semantic_public_snapshot.json')
+          snap=json.loads(path.read_text(encoding='utf8'))
+          texts=[]
+          for row in snap['prs']:
+              texts.extend(x['body'] for x in row['eligible_reports'])
+              texts.extend(x['body'] for x in row['negative_bot_bodies'])
+              assert all('body' not in x for x in row['other_bot_comment_metadata'])
+              assert row['pr_number'] > 0 and len(row['pr_head_sha'])==40
+          joined='\n'.join(texts)
+          patterns = (
+              r'(?i)github_pat_[A-Za-z0-9_]{15,}',
+              r'(?i)gh[pousr]_[A-Za-z0-9]{20,}',
+              r'(?i)sk-[A-Za-z0-9]{16,}',
+              r'(?i)AKIA[0-9A-Z]{16}',
+              r'(?i)[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}',
+              r'(?i)(?:C:\\Users\\|/home/[^/\s]+/)',
+          )
+          for p in patterns:
+              if re.search(p,joined):
+                  raise SystemExit('Public-source body failed privacy and credentials scan')
+          assert len(snap['prs'])==97
+          print('PASS public bot evidence only, credential and contact patterns absent')
+          PY
+      - name: Commit frozen public evidence on audit branch only
+        if: ${{ github.ref_name == 'audit/rspack97-frozen-semantic-20261122' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add evidence/rspack97_semantic_public_snapshot.json results/rspack97_semantic_size_audit.json results/rspack97_semantic_size_audit.csv results/rspack97_semantic_manifest.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Freeze reproducible 97-PR public semantic evidence"
+            git push origin HEAD:audit/rspack97-frozen-semantic-20261122
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: rspack97-public-semantic-audit
+          path: |
+            evidence/rspack97_semantic_public_snapshot.json
+            results/rspack97_semantic_size_audit.json
+            results/rspack97_semantic_size_audit.csv
+            results/rspack97_semantic_manifest.json
+          retention-days: 60
