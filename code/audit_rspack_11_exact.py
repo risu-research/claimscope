@@ -2,7 +2,7 @@
 """Replay the pinned Peng et al. D6 extractor on public Rspack comment sources.
 
 The historical label and the current GitHub issue-comment corpus are separate inputs.
-Original code is downloaded at a fixed commit and its Git blob SHA is verified.
+Original code is loaded from pinned local copies if present (otherwise fetched) and its Git blob SHA is always verified.
 Results are generated independently of the original private evidence snapshot.
 """
 import argparse
@@ -59,7 +59,10 @@ def load_original_extractor():
     sources = {}
     for basename, expected in BLOB_SHAS.items():
         url = f"https://raw.githubusercontent.com/{UPSTREAM}/{PIN}/{PATH}/{basename}"
-        raw = checked_fetch(url)
+        pinned_local = ROOT / "code" / "upstream_pinned" / basename
+        # The release bundles the original MIT-licensed bytes so offline
+        # source verification needs no network connection.
+        raw = pinned_local.read_bytes() if pinned_local.is_file() else checked_fetch(url)
         observed = git_blob_sha(raw)
         if observed != expected:
             raise ValueError(f"Pinned source hash mismatch: {basename}: {observed}")
