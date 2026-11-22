@@ -166,3 +166,27 @@ The existing `bash run_checks.sh` also runs this check automatically. To fetch a
 
 Live collection uses a GitHub API token only if provided through the environment. Changes in comment populations, timestamps, or the frozen sample fail validation. The timestamp audit supports the claim that the **currently visible** comments all predate the August snapshot. It cannot establish the exact earlier content bytes, restore deleted comments, or verify the historical state of other input channels.
 
+
+## Archival reproduction and software citation
+
+The publication-ready release includes a [full offline reproduction guide](REPRODUCE_RELEASE.md),
+a [minimal 72-match boundary witness corpus](evidence/rspack65_boundary_witnesses_20261122.json),
+and byte-identical, MIT-licensed [original source detector files](code/upstream_pinned/).
+All 72 cross-comment cue/quantity matches across 65 Rspack PRs are now independently
+re-executable offline using the original rule. The remaining full-current-GitHub
+source replay is explicitly a separate online observation. No original private
+August 2026 evidence snapshot is claimed or archived.
+
+Run the full public source and security preflight with:
+
+    python3 code/preflight_release.py
+    python3 code/replay_rspack65_boundary_witnesses.py --offline
+
+The root [CITATION.cff](CITATION.cff) and [Zenodo metadata](.zenodo.json) identify
+this artifact as research software by Moon Hwan Lee, RISU Institute. The
+[third-party source notice](THIRD_PARTY_NOTICES.md) separates ClaimScope code
+rights from the original study's labels and Rspack's public automated reports.
+
+A DOI is only authoritative after the corresponding GitHub release has been
+successfully archived by Zenodo. The source code and reproducibility content
+are available without a DOI.
