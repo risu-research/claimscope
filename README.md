@@ -139,3 +139,30 @@ Or replay just the 97-PR evidence without a network connection:
     python3 code/rspack97_semantic_audit.py --offline
 
 See the [97-PR reproduction protocol](evidence/RSPACK97_SEMANTIC_REPRODUCTION.md), [per-PR evidence table](results/rspack97_semantic_size_audit.csv), [source snapshot](evidence/rspack97_semantic_public_snapshot.json), [integrity manifest](results/rspack97_semantic_manifest.json), and [source-audit code](code/rspack97_semantic_audit.py). Regenerating the dated source collection requires public GitHub API access, which is a separate mode of execution.
+
+## Temporal provenance of the 97 public Rspack issue threads
+
+The original metric extraction records an August 27, 2026 **22:00:14 UTC** evidence snapshot. On November 22, 2026 we independently enumerated every currently visible issue-thread comment in the same 97 Rspack PRs.
+
+| Verified temporal property | Result |
+| --- | ---: |
+| PR threads | **97** |
+| Public issue comments | **476** |
+| Bot comments | 437 |
+| Other comments | 39 |
+| Comments created after reference snapshot | **0** |
+| Comments last updated after reference snapshot | **0** |
+| Latest recorded comment update | **2026-06-02 07:58:45 UTC** |
+
+The [476-row minimal metadata ledger](evidence/rspack97_issue_comment_timestamps_20261122.csv) records only PR ID, public GitHub comment ID, creation and last-update UTC timestamps, and a bot indicator. It contains **no comment text or account names**. [Its reproducibility summary](results/rspack97_temporal_provenance_20261122.json) locks the original study's reference time, source-inventory SHA-256, row counts, latest timestamp, and ledger digest.
+
+To reproduce these timestamp checks **without the network**, run:
+
+    python3 code/audit_rspack97_temporal.py --offline
+
+The existing `bash run_checks.sh` also runs this check automatically. To fetch a **new** public observation rather than replay the frozen ledger:
+
+    python3 code/audit_rspack97_temporal.py --collect
+
+Live collection uses a GitHub API token only if provided through the environment. Changes in comment populations, timestamps, or the frozen sample fail validation. The timestamp audit supports the claim that the **currently visible** comments all predate the August snapshot. It cannot establish the exact earlier content bytes, restore deleted comments, or verify the historical state of other input channels.
+
