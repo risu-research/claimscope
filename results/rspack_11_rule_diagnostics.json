@@ -1,0 +1,1358 @@
+{
+  "pinned_upstream_commit": "64432e0b6ed7791bbfa929c6c183fc76c75b5d58",
+  "retrieval_utc": "2026-11-22T02:25:13.040454+00:00",
+  "n_negative": 11,
+  "negative_original_positive_at_12": 0,
+  "negative_comparison_removed_positive_at_12": 11,
+  "negative_minimal_positive_at_12": 11,
+  "negative_original_positive_at_48": 11,
+  "negative_original_positive_at_80": 11,
+  "n_positive_controls": 2,
+  "positive_controls_original_positive_at_12": 0,
+  "limitations": [
+    "Current public bot-comment text, not an archived original evidence snapshot",
+    "Edits are controlled input transformations and are diagnostic, not observed PR events",
+    "Increasing WINDOW_TOKENS also changes other window-based rule behavior"
+  ],
+  "rows": [
+    {
+      "pr_number": 11179,
+      "published_D6": false,
+      "comment_url": "https://github.com/web-infra-dev/rspack/pull/11179#issuecomment-3117305160",
+      "comment_id": 3117305160,
+      "comment_created_at": "2025-07-25T10:44:39Z",
+      "comment_updated_at": "2025-07-28T06:40:53Z",
+      "comparison_line_removed_chars": 285,
+      "size_measurement_lines": [
+        "❌ Size increased by 19.63KB from 49.02MB to 49.04MB (⬆️0.04%)"
+      ],
+      "measurements": "❌ Size increased by 19.63KB from 49.02MB to 49.04MB (⬆️0.04%)",
+      "matches_by_window_and_edit": {
+        "original": {
+          "12": false,
+          "16": false,
+          "20": false,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        },
+        "comparison_line_removed": {
+          "12": true,
+          "16": true,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        },
+        "minimal_header_and_measurement": {
+          "12": true,
+          "16": true,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        }
+      },
+      "original_match_detail": {
+        "normalized_excerpt": "## 📦 binary size-limit\n> comparing [` `](  to  [perf: improve calculate order index of code splitting (#11195) by harpsealjs]( \n\n❌ size increased by 19.63kb from 49.02mb to 49.04mb (⬆️0.04%)",
+        "cue_positions": [
+          {
+            "cue": "binary size",
+            "token": 2,
+            "char": 5
+          }
+        ],
+        "quant_positions": [
+          {
+            "kind": "bytes",
+            "match": "19.63kb",
+            "token": 24,
+            "char": 149
+          },
+          {
+            "kind": "bytes",
+            "match": "49.02mb",
+            "token": 26,
+            "char": 162
+          },
+          {
+            "kind": "bytes",
+            "match": "49.04mb",
+            "token": 28,
+            "char": 173
+          },
+          {
+            "kind": "from_to",
+            "match": "from 49.02mb to 49.04",
+            "token": 25,
+            "char": 157
+          }
+        ],
+        "nearest_quant_pairs": [
+          {
+            "cue": "binary size",
+            "quant": "19.63kb",
+            "kind": "bytes",
+            "gap_tokens": 22,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "from 49.02mb to 49.04",
+            "kind": "from_to",
+            "gap_tokens": 23,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "49.02mb",
+            "kind": "bytes",
+            "gap_tokens": 24,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "49.04mb",
+            "kind": "bytes",
+            "gap_tokens": 26,
+            "direction": "after"
+          }
+        ],
+        "exclusion_positions": []
+      }
+    },
+    {
+      "pr_number": 11320,
+      "published_D6": false,
+      "comment_url": "https://github.com/web-infra-dev/rspack/pull/11320#issuecomment-3160273685",
+      "comment_id": 3160273685,
+      "comment_created_at": "2025-08-06T13:52:56Z",
+      "comment_updated_at": "2025-08-06T13:52:56Z",
+      "comparison_line_removed_chars": 272,
+      "size_measurement_lines": [
+        "🎉 Size decreased by 9.13KB from 50.37MB to 50.36MB (⬇️0.02%)"
+      ],
+      "measurements": "🎉 Size decreased by 9.13KB from 50.37MB to 50.36MB (⬇️0.02%)",
+      "matches_by_window_and_edit": {
+        "original": {
+          "12": false,
+          "16": false,
+          "20": false,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        },
+        "comparison_line_removed": {
+          "12": true,
+          "16": true,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        },
+        "minimal_header_and_measurement": {
+          "12": true,
+          "16": true,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        }
+      },
+      "original_match_detail": {
+        "normalized_excerpt": "## 📦 binary size-limit\n> comparing [` `](  to  [fix: export the missing `pathdata` type (#11315) by qingyu wang]( \n\n🎉 size decreased by 9.13kb from 50.37mb to 50.36mb (⬇️0.02%)",
+        "cue_positions": [
+          {
+            "cue": "binary size",
+            "token": 2,
+            "char": 5
+          }
+        ],
+        "quant_positions": [
+          {
+            "kind": "bytes",
+            "match": "9.13kb",
+            "token": 23,
+            "char": 136
+          },
+          {
+            "kind": "bytes",
+            "match": "50.37mb",
+            "token": 25,
+            "char": 148
+          },
+          {
+            "kind": "bytes",
+            "match": "50.36mb",
+            "token": 27,
+            "char": 159
+          },
+          {
+            "kind": "from_to",
+            "match": "from 50.37mb to 50.36",
+            "token": 24,
+            "char": 143
+          }
+        ],
+        "nearest_quant_pairs": [
+          {
+            "cue": "binary size",
+            "quant": "9.13kb",
+            "kind": "bytes",
+            "gap_tokens": 21,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "from 50.37mb to 50.36",
+            "kind": "from_to",
+            "gap_tokens": 22,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "50.37mb",
+            "kind": "bytes",
+            "gap_tokens": 23,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "50.36mb",
+            "kind": "bytes",
+            "gap_tokens": 25,
+            "direction": "after"
+          }
+        ],
+        "exclusion_positions": []
+      }
+    },
+    {
+      "pr_number": 12058,
+      "published_D6": false,
+      "comment_url": "https://github.com/web-infra-dev/rspack/pull/12058#issuecomment-3478565678",
+      "comment_id": 3478565678,
+      "comment_created_at": "2025-11-03T00:29:04Z",
+      "comment_updated_at": "2025-11-03T00:29:04Z",
+      "comparison_line_removed_chars": 290,
+      "size_measurement_lines": [
+        "🙈 Size remains the same at 47.85MB"
+      ],
+      "measurements": "🙈 Size remains the same at 47.85MB",
+      "matches_by_window_and_edit": {
+        "original": {
+          "12": false,
+          "16": false,
+          "20": false,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        },
+        "comparison_line_removed": {
+          "12": true,
+          "16": true,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        },
+        "minimal_header_and_measurement": {
+          "12": true,
+          "16": true,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        }
+      },
+      "original_match_detail": {
+        "normalized_excerpt": "## 📦 binary size-limit\n> comparing [` `](  to  [chore(deps): update dependency @biomejs/biome to ^  (#12055) by renovate[bot]]( \n\n🙈 size remains the same at 47.85mb",
+        "cue_positions": [
+          {
+            "cue": "binary size",
+            "token": 2,
+            "char": 5
+          }
+        ],
+        "quant_positions": [
+          {
+            "kind": "bytes",
+            "match": "47.85mb",
+            "token": 24,
+            "char": 157
+          }
+        ],
+        "nearest_quant_pairs": [
+          {
+            "cue": "binary size",
+            "quant": "47.85mb",
+            "kind": "bytes",
+            "gap_tokens": 22,
+            "direction": "after"
+          }
+        ],
+        "exclusion_positions": []
+      }
+    },
+    {
+      "pr_number": 13714,
+      "published_D6": false,
+      "comment_url": "https://github.com/web-infra-dev/rspack/pull/13714#issuecomment-4250589596",
+      "comment_id": 4250589596,
+      "comment_created_at": "2026-04-15T08:50:45Z",
+      "comment_updated_at": "2026-04-16T09:31:41Z",
+      "comparison_line_removed_chars": 272,
+      "size_measurement_lines": [
+        "🎉 Size decreased by 766.47KB from 49.39MB to 48.64MB (⬇️1.52%)"
+      ],
+      "measurements": "🎉 Size decreased by 766.47KB from 49.39MB to 48.64MB (⬇️1.52%)",
+      "matches_by_window_and_edit": {
+        "original": {
+          "12": false,
+          "16": false,
+          "20": false,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        },
+        "comparison_line_removed": {
+          "12": true,
+          "16": true,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        },
+        "minimal_header_and_measurement": {
+          "12": true,
+          "16": true,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        }
+      },
+      "original_match_detail": {
+        "normalized_excerpt": "## 📦 binary size-limit\n> comparing [` `](  to  [fix: render numeric chunk ids as number literals (#13604) by fy]( \n\n🎉 size decreased by 766.47kb from 49.39mb to 48.64mb (⬇️1.52%)",
+        "cue_positions": [
+          {
+            "cue": "binary size",
+            "token": 2,
+            "char": 5
+          }
+        ],
+        "quant_positions": [
+          {
+            "kind": "bytes",
+            "match": "766.47kb",
+            "token": 24,
+            "char": 136
+          },
+          {
+            "kind": "bytes",
+            "match": "49.39mb",
+            "token": 26,
+            "char": 150
+          },
+          {
+            "kind": "bytes",
+            "match": "48.64mb",
+            "token": 28,
+            "char": 161
+          },
+          {
+            "kind": "from_to",
+            "match": "from 49.39mb to 48.64",
+            "token": 25,
+            "char": 145
+          }
+        ],
+        "nearest_quant_pairs": [
+          {
+            "cue": "binary size",
+            "quant": "766.47kb",
+            "kind": "bytes",
+            "gap_tokens": 22,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "from 49.39mb to 48.64",
+            "kind": "from_to",
+            "gap_tokens": 23,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "49.39mb",
+            "kind": "bytes",
+            "gap_tokens": 24,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "48.64mb",
+            "kind": "bytes",
+            "gap_tokens": 26,
+            "direction": "after"
+          }
+        ],
+        "exclusion_positions": []
+      }
+    },
+    {
+      "pr_number": 13842,
+      "published_D6": false,
+      "comment_url": "https://github.com/web-infra-dev/rspack/pull/13842#issuecomment-4324907104",
+      "comment_id": 4324907104,
+      "comment_created_at": "2026-04-27T07:03:52Z",
+      "comment_updated_at": "2026-04-27T09:54:26Z",
+      "comparison_line_removed_chars": 268,
+      "size_measurement_lines": [
+        "🙈 Size remains the same at 62.86MB"
+      ],
+      "measurements": "🙈 Size remains the same at 62.86MB",
+      "matches_by_window_and_edit": {
+        "original": {
+          "12": false,
+          "16": false,
+          "20": false,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        },
+        "comparison_line_removed": {
+          "12": true,
+          "16": true,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        },
+        "minimal_header_and_measurement": {
+          "12": true,
+          "16": true,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        }
+      },
+      "original_match_detail": {
+        "normalized_excerpt": "## 📦 binary size-limit\n> comparing [` `](  to  [fix(cli): respect devserver port in preview (#13838) by wei]( \n\n🙈 size remains the same at 62.86mb",
+        "cue_positions": [
+          {
+            "cue": "binary size",
+            "token": 2,
+            "char": 5
+          }
+        ],
+        "quant_positions": [
+          {
+            "kind": "bytes",
+            "match": "62.86mb",
+            "token": 24,
+            "char": 139
+          }
+        ],
+        "nearest_quant_pairs": [
+          {
+            "cue": "binary size",
+            "quant": "62.86mb",
+            "kind": "bytes",
+            "gap_tokens": 22,
+            "direction": "after"
+          }
+        ],
+        "exclusion_positions": []
+      }
+    },
+    {
+      "pr_number": 13854,
+      "published_D6": false,
+      "comment_url": "https://github.com/web-infra-dev/rspack/pull/13854#issuecomment-4326722025",
+      "comment_id": 4326722025,
+      "comment_created_at": "2026-04-27T11:52:14Z",
+      "comment_updated_at": "2026-04-28T03:31:17Z",
+      "comparison_line_removed_chars": 276,
+      "size_measurement_lines": [
+        "❌ Size increased by 4.00KB from 62.86MB to 62.86MB (⬆️0.01%)"
+      ],
+      "measurements": "❌ Size increased by 4.00KB from 62.86MB to 62.86MB (⬆️0.01%)",
+      "matches_by_window_and_edit": {
+        "original": {
+          "12": false,
+          "16": false,
+          "20": false,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        },
+        "comparison_line_removed": {
+          "12": true,
+          "16": true,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        },
+        "minimal_header_and_measurement": {
+          "12": true,
+          "16": true,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        }
+      },
+      "original_match_detail": {
+        "normalized_excerpt": "## 📦 binary size-limit\n> comparing [` `](  to  [fix: enable module static cache in development (#13856) by hardfist]( \n\n❌ size increased by 4.00kb from 62.86mb to 62.86mb (⬆️0.01%)",
+        "cue_positions": [
+          {
+            "cue": "binary size",
+            "token": 2,
+            "char": 5
+          }
+        ],
+        "quant_positions": [
+          {
+            "kind": "bytes",
+            "match": "4.00kb",
+            "token": 23,
+            "char": 140
+          },
+          {
+            "kind": "bytes",
+            "match": "62.86mb",
+            "token": 25,
+            "char": 152
+          },
+          {
+            "kind": "bytes",
+            "match": "62.86mb",
+            "token": 27,
+            "char": 163
+          },
+          {
+            "kind": "from_to",
+            "match": "from 62.86mb to 62.86",
+            "token": 24,
+            "char": 147
+          }
+        ],
+        "nearest_quant_pairs": [
+          {
+            "cue": "binary size",
+            "quant": "4.00kb",
+            "kind": "bytes",
+            "gap_tokens": 21,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "from 62.86mb to 62.86",
+            "kind": "from_to",
+            "gap_tokens": 22,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "62.86mb",
+            "kind": "bytes",
+            "gap_tokens": 23,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "62.86mb",
+            "kind": "bytes",
+            "gap_tokens": 25,
+            "direction": "after"
+          }
+        ],
+        "exclusion_positions": []
+      }
+    },
+    {
+      "pr_number": 13935,
+      "published_D6": false,
+      "comment_url": "https://github.com/web-infra-dev/rspack/pull/13935#issuecomment-4394985447",
+      "comment_id": 4394985447,
+      "comment_created_at": "2026-05-07T07:16:38Z",
+      "comment_updated_at": "2026-05-07T07:16:38Z",
+      "comparison_line_removed_chars": 294,
+      "size_measurement_lines": [
+        "❌ Size increased by 24.63KB from 61.91MB to 61.93MB (⬆️0.04%)"
+      ],
+      "measurements": "❌ Size increased by 24.63KB from 61.91MB to 61.93MB (⬆️0.04%)",
+      "matches_by_window_and_edit": {
+        "original": {
+          "12": false,
+          "16": false,
+          "20": false,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        },
+        "comparison_line_removed": {
+          "12": true,
+          "16": true,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        },
+        "minimal_header_and_measurement": {
+          "12": true,
+          "16": true,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        }
+      },
+      "original_match_detail": {
+        "normalized_excerpt": "## 📦 binary size-limit\n> comparing [` `](  to  [perf: reduce normal module creation and rule matching overhead (#13926) by harpsealjs]( \n\n❌ size increased by 24.63kb from 61.91mb to 61.93mb (⬆️0.04%)",
+        "cue_positions": [
+          {
+            "cue": "binary size",
+            "token": 2,
+            "char": 5
+          }
+        ],
+        "quant_positions": [
+          {
+            "kind": "bytes",
+            "match": "24.63kb",
+            "token": 25,
+            "char": 158
+          },
+          {
+            "kind": "bytes",
+            "match": "61.91mb",
+            "token": 27,
+            "char": 171
+          },
+          {
+            "kind": "bytes",
+            "match": "61.93mb",
+            "token": 29,
+            "char": 182
+          },
+          {
+            "kind": "from_to",
+            "match": "from 61.91mb to 61.93",
+            "token": 26,
+            "char": 166
+          }
+        ],
+        "nearest_quant_pairs": [
+          {
+            "cue": "binary size",
+            "quant": "24.63kb",
+            "kind": "bytes",
+            "gap_tokens": 23,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "from 61.91mb to 61.93",
+            "kind": "from_to",
+            "gap_tokens": 24,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "61.91mb",
+            "kind": "bytes",
+            "gap_tokens": 25,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "61.93mb",
+            "kind": "bytes",
+            "gap_tokens": 27,
+            "direction": "after"
+          }
+        ],
+        "exclusion_positions": []
+      }
+    },
+    {
+      "pr_number": 13968,
+      "published_D6": false,
+      "comment_url": "https://github.com/web-infra-dev/rspack/pull/13968#issuecomment-4411770650",
+      "comment_id": 4411770650,
+      "comment_created_at": "2026-05-09T06:49:22Z",
+      "comment_updated_at": "2026-05-11T06:27:43Z",
+      "comparison_line_removed_chars": 273,
+      "size_measurement_lines": [
+        "🎉 Size decreased by 16.00KB from 61.92MB to 61.90MB (⬇️0.03%)"
+      ],
+      "measurements": "🎉 Size decreased by 16.00KB from 61.92MB to 61.90MB (⬇️0.03%)",
+      "matches_by_window_and_edit": {
+        "original": {
+          "12": false,
+          "16": false,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        },
+        "comparison_line_removed": {
+          "12": true,
+          "16": true,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        },
+        "minimal_header_and_measurement": {
+          "12": true,
+          "16": true,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        }
+      },
+      "original_match_detail": {
+        "normalized_excerpt": "## 📦 binary size-limit\n> comparing [` `](  to  [feat(externals): add modern-module externals type (#13861) by fy]( \n\n🎉 size decreased by 16.00kb from 61.92mb to 61.90mb (⬇️0.03%)",
+        "cue_positions": [
+          {
+            "cue": "binary size",
+            "token": 2,
+            "char": 5
+          }
+        ],
+        "quant_positions": [
+          {
+            "kind": "bytes",
+            "match": "16.00kb",
+            "token": 21,
+            "char": 137
+          },
+          {
+            "kind": "bytes",
+            "match": "61.92mb",
+            "token": 23,
+            "char": 150
+          },
+          {
+            "kind": "bytes",
+            "match": "61.90mb",
+            "token": 25,
+            "char": 161
+          },
+          {
+            "kind": "from_to",
+            "match": "from 61.92mb to 61.90",
+            "token": 22,
+            "char": 145
+          }
+        ],
+        "nearest_quant_pairs": [
+          {
+            "cue": "binary size",
+            "quant": "16.00kb",
+            "kind": "bytes",
+            "gap_tokens": 19,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "from 61.92mb to 61.90",
+            "kind": "from_to",
+            "gap_tokens": 20,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "61.92mb",
+            "kind": "bytes",
+            "gap_tokens": 21,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "61.90mb",
+            "kind": "bytes",
+            "gap_tokens": 23,
+            "direction": "after"
+          }
+        ],
+        "exclusion_positions": []
+      }
+    },
+    {
+      "pr_number": 13973,
+      "published_D6": false,
+      "comment_url": "https://github.com/web-infra-dev/rspack/pull/13973#issuecomment-4412038565",
+      "comment_id": 4412038565,
+      "comment_created_at": "2026-05-09T08:28:12Z",
+      "comment_updated_at": "2026-05-11T03:26:28Z",
+      "comparison_line_removed_chars": 268,
+      "size_measurement_lines": [
+        "🎉 Size decreased by 8.00KB from 61.92MB to 61.91MB (⬇️0.01%)"
+      ],
+      "measurements": "🎉 Size decreased by 8.00KB from 61.92MB to 61.91MB (⬇️0.01%)",
+      "matches_by_window_and_edit": {
+        "original": {
+          "12": false,
+          "16": false,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        },
+        "comparison_line_removed": {
+          "12": true,
+          "16": true,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        },
+        "minimal_header_and_measurement": {
+          "12": true,
+          "16": true,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        }
+      },
+      "original_match_detail": {
+        "normalized_excerpt": "## 📦 binary size-limit\n> comparing [` `](  to  [test: split benchmark case entrypoints (#13971) by hardfist]( \n\n🎉 size decreased by 8.00kb from 61.92mb to 61.91mb (⬇️0.01%)",
+        "cue_positions": [
+          {
+            "cue": "binary size",
+            "token": 2,
+            "char": 5
+          }
+        ],
+        "quant_positions": [
+          {
+            "kind": "bytes",
+            "match": "8.00kb",
+            "token": 21,
+            "char": 132
+          },
+          {
+            "kind": "bytes",
+            "match": "61.92mb",
+            "token": 23,
+            "char": 144
+          },
+          {
+            "kind": "bytes",
+            "match": "61.91mb",
+            "token": 25,
+            "char": 155
+          },
+          {
+            "kind": "from_to",
+            "match": "from 61.92mb to 61.91",
+            "token": 22,
+            "char": 139
+          }
+        ],
+        "nearest_quant_pairs": [
+          {
+            "cue": "binary size",
+            "quant": "8.00kb",
+            "kind": "bytes",
+            "gap_tokens": 19,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "from 61.92mb to 61.91",
+            "kind": "from_to",
+            "gap_tokens": 20,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "61.92mb",
+            "kind": "bytes",
+            "gap_tokens": 21,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "61.91mb",
+            "kind": "bytes",
+            "gap_tokens": 23,
+            "direction": "after"
+          }
+        ],
+        "exclusion_positions": []
+      }
+    },
+    {
+      "pr_number": 13975,
+      "published_D6": false,
+      "comment_url": "https://github.com/web-infra-dev/rspack/pull/13975#issuecomment-4412364764",
+      "comment_id": 4412364764,
+      "comment_created_at": "2026-05-09T11:01:36Z",
+      "comment_updated_at": "2026-05-09T11:01:36Z",
+      "comparison_line_removed_chars": 268,
+      "size_measurement_lines": [
+        "❌ Size increased by 4.00KB from 61.92MB to 61.92MB (⬆️0.01%)"
+      ],
+      "measurements": "❌ Size increased by 4.00KB from 61.92MB to 61.92MB (⬆️0.01%)",
+      "matches_by_window_and_edit": {
+        "original": {
+          "12": false,
+          "16": false,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        },
+        "comparison_line_removed": {
+          "12": true,
+          "16": true,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        },
+        "minimal_header_and_measurement": {
+          "12": true,
+          "16": true,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        }
+      },
+      "original_match_detail": {
+        "normalized_excerpt": "## 📦 binary size-limit\n> comparing [` `](  to  [test: split benchmark case entrypoints (#13971) by hardfist]( \n\n❌ size increased by 4.00kb from 61.92mb to 61.92mb (⬆️0.01%)",
+        "cue_positions": [
+          {
+            "cue": "binary size",
+            "token": 2,
+            "char": 5
+          }
+        ],
+        "quant_positions": [
+          {
+            "kind": "bytes",
+            "match": "4.00kb",
+            "token": 21,
+            "char": 132
+          },
+          {
+            "kind": "bytes",
+            "match": "61.92mb",
+            "token": 23,
+            "char": 144
+          },
+          {
+            "kind": "bytes",
+            "match": "61.92mb",
+            "token": 25,
+            "char": 155
+          },
+          {
+            "kind": "from_to",
+            "match": "from 61.92mb to 61.92",
+            "token": 22,
+            "char": 139
+          }
+        ],
+        "nearest_quant_pairs": [
+          {
+            "cue": "binary size",
+            "quant": "4.00kb",
+            "kind": "bytes",
+            "gap_tokens": 19,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "from 61.92mb to 61.92",
+            "kind": "from_to",
+            "gap_tokens": 20,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "61.92mb",
+            "kind": "bytes",
+            "gap_tokens": 21,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "61.92mb",
+            "kind": "bytes",
+            "gap_tokens": 23,
+            "direction": "after"
+          }
+        ],
+        "exclusion_positions": []
+      }
+    },
+    {
+      "pr_number": 14101,
+      "published_D6": false,
+      "comment_url": "https://github.com/web-infra-dev/rspack/pull/14101#issuecomment-4498047429",
+      "comment_id": 4498047429,
+      "comment_created_at": "2026-05-20T11:47:28Z",
+      "comment_updated_at": "2026-05-20T11:47:28Z",
+      "comparison_line_removed_chars": 272,
+      "size_measurement_lines": [
+        "🎉 Size decreased by 12.00KB from 61.92MB to 61.91MB (⬇️0.02%)"
+      ],
+      "measurements": "🎉 Size decreased by 12.00KB from 61.92MB to 61.91MB (⬇️0.02%)",
+      "matches_by_window_and_edit": {
+        "original": {
+          "12": false,
+          "16": false,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        },
+        "comparison_line_removed": {
+          "12": true,
+          "16": true,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        },
+        "minimal_header_and_measurement": {
+          "12": true,
+          "16": true,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        }
+      },
+      "original_match_detail": {
+        "normalized_excerpt": "## 📦 binary size-limit\n> comparing [` `](  to  [perf: remove unnecessary async_trait usage (#14041) by hardfist]( \n\n🎉 size decreased by 12.00kb from 61.92mb to 61.91mb (⬇️0.02%)",
+        "cue_positions": [
+          {
+            "cue": "binary size",
+            "token": 2,
+            "char": 5
+          }
+        ],
+        "quant_positions": [
+          {
+            "kind": "bytes",
+            "match": "12.00kb",
+            "token": 21,
+            "char": 136
+          },
+          {
+            "kind": "bytes",
+            "match": "61.92mb",
+            "token": 23,
+            "char": 149
+          },
+          {
+            "kind": "bytes",
+            "match": "61.91mb",
+            "token": 25,
+            "char": 160
+          },
+          {
+            "kind": "from_to",
+            "match": "from 61.92mb to 61.91",
+            "token": 22,
+            "char": 144
+          }
+        ],
+        "nearest_quant_pairs": [
+          {
+            "cue": "binary size",
+            "quant": "12.00kb",
+            "kind": "bytes",
+            "gap_tokens": 19,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "from 61.92mb to 61.91",
+            "kind": "from_to",
+            "gap_tokens": 20,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "61.92mb",
+            "kind": "bytes",
+            "gap_tokens": 21,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "61.91mb",
+            "kind": "bytes",
+            "gap_tokens": 23,
+            "direction": "after"
+          }
+        ],
+        "exclusion_positions": []
+      }
+    },
+    {
+      "pr_number": 12560,
+      "published_D6": true,
+      "comment_url": "https://github.com/web-infra-dev/rspack/pull/12560#issuecomment-3691422326",
+      "comment_id": 3691422326,
+      "comment_created_at": "2025-12-25T13:03:05Z",
+      "comment_updated_at": "2025-12-25T15:01:07Z",
+      "comparison_line_removed_chars": 266,
+      "size_measurement_lines": [
+        "🎉 Size decreased by 77.75KB from 48.07MB to 48.00MB (⬇️0.16%)"
+      ],
+      "measurements": "🎉 Size decreased by 77.75KB from 48.07MB to 48.00MB (⬇️0.16%)",
+      "matches_by_window_and_edit": {
+        "original": {
+          "12": false,
+          "16": false,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        },
+        "comparison_line_removed": {
+          "12": true,
+          "16": true,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        },
+        "minimal_header_and_measurement": {
+          "12": true,
+          "16": true,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        }
+      },
+      "original_match_detail": {
+        "normalized_excerpt": "## 📦 binary size-limit\n> comparing [` `](  to  [chore: unify prettier config format (#12557) by neverland]( \n\n🎉 size decreased by 77.75kb from 48.07mb to 48.00mb (⬇️0.16%)",
+        "cue_positions": [
+          {
+            "cue": "binary size",
+            "token": 2,
+            "char": 5
+          }
+        ],
+        "quant_positions": [
+          {
+            "kind": "bytes",
+            "match": "77.75kb",
+            "token": 21,
+            "char": 130
+          },
+          {
+            "kind": "bytes",
+            "match": "48.07mb",
+            "token": 23,
+            "char": 143
+          },
+          {
+            "kind": "bytes",
+            "match": "48.00mb",
+            "token": 25,
+            "char": 154
+          },
+          {
+            "kind": "from_to",
+            "match": "from 48.07mb to 48.00",
+            "token": 22,
+            "char": 138
+          }
+        ],
+        "nearest_quant_pairs": [
+          {
+            "cue": "binary size",
+            "quant": "77.75kb",
+            "kind": "bytes",
+            "gap_tokens": 19,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "from 48.07mb to 48.00",
+            "kind": "from_to",
+            "gap_tokens": 20,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "48.07mb",
+            "kind": "bytes",
+            "gap_tokens": 21,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "48.00mb",
+            "kind": "bytes",
+            "gap_tokens": 23,
+            "direction": "after"
+          }
+        ],
+        "exclusion_positions": []
+      }
+    },
+    {
+      "pr_number": 13010,
+      "published_D6": true,
+      "comment_url": "https://github.com/web-infra-dev/rspack/pull/13010#issuecomment-3871932287",
+      "comment_id": 3871932287,
+      "comment_created_at": "2026-02-09T14:07:04Z",
+      "comment_updated_at": "2026-02-09T14:07:04Z",
+      "comparison_line_removed_chars": 266,
+      "size_measurement_lines": [
+        "🎉 Size decreased by 48.00KB from 48.65MB to 48.61MB (⬇️0.10%)"
+      ],
+      "measurements": "🎉 Size decreased by 48.00KB from 48.65MB to 48.61MB (⬇️0.10%)",
+      "matches_by_window_and_edit": {
+        "original": {
+          "12": false,
+          "16": false,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        },
+        "comparison_line_removed": {
+          "12": true,
+          "16": true,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        },
+        "minimal_header_and_measurement": {
+          "12": true,
+          "16": true,
+          "20": true,
+          "24": true,
+          "32": true,
+          "48": true,
+          "80": true
+        }
+      },
+      "original_match_detail": {
+        "normalized_excerpt": "## 📦 binary size-limit\n> comparing [` `](  to  [refactor: wrap artifact in stealcell (#12979) by hardfist]( \n\n🎉 size decreased by 48.00kb from 48.65mb to 48.61mb (⬇️0.10%)",
+        "cue_positions": [
+          {
+            "cue": "binary size",
+            "token": 2,
+            "char": 5
+          }
+        ],
+        "quant_positions": [
+          {
+            "kind": "bytes",
+            "match": "48.00kb",
+            "token": 21,
+            "char": 130
+          },
+          {
+            "kind": "bytes",
+            "match": "48.65mb",
+            "token": 23,
+            "char": 143
+          },
+          {
+            "kind": "bytes",
+            "match": "48.61mb",
+            "token": 25,
+            "char": 154
+          },
+          {
+            "kind": "from_to",
+            "match": "from 48.65mb to 48.61",
+            "token": 22,
+            "char": 138
+          }
+        ],
+        "nearest_quant_pairs": [
+          {
+            "cue": "binary size",
+            "quant": "48.00kb",
+            "kind": "bytes",
+            "gap_tokens": 19,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "from 48.65mb to 48.61",
+            "kind": "from_to",
+            "gap_tokens": 20,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "48.65mb",
+            "kind": "bytes",
+            "gap_tokens": 21,
+            "direction": "after"
+          },
+          {
+            "cue": "binary size",
+            "quant": "48.61mb",
+            "kind": "bytes",
+            "gap_tokens": 23,
+            "direction": "after"
+          }
+        ],
+        "exclusion_positions": []
+      }
+    }
+  ]
+}

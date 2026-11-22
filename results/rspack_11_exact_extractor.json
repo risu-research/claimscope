@@ -1,0 +1,867 @@
+{
+  "cohort": "Published D6-negative Rspack PRs carrying a current bot binary-size comment",
+  "pin": "64432e0b6ed7791bbfa929c6c183fc76c75b5d58",
+  "source_blob_sha1": {
+    "metric_patterns.py": "31aaf5eb77b97be24cb4be359d1a30c862c2293e",
+    "extract_metrics.py": "cf5b93ff071a39a0e4b2d8a4fdb85a2059b80a86"
+  },
+  "retrieval_utc": "2026-11-22T02:25:09.036786+00:00",
+  "limits": [
+    "Current GitHub content differs potentially from the original evidence snapshot.",
+    "This audit omits the original snapshot's CI workflow names.",
+    "PR body, commits and patch content are current API representations."
+  ],
+  "n": 11,
+  "n_original_detects_binary_bot_D6": 0,
+  "n_current_any_source_detects_D6": 0,
+  "n_current_without_bot_detects_D6": 0,
+  "results": [
+    {
+      "pr_number": 11179,
+      "published_D6": false,
+      "published_D6_nodiff": null,
+      "pr_url": "https://github.com/web-infra-dev/rspack/pull/11179",
+      "pr_created_at": "2025-07-25T10:20:56Z",
+      "pr_author_login": "LingyuCoder",
+      "current_pr_body_updated_at": "2025-07-28T07:09:47Z",
+      "source_counts": {
+        "issue_comments": 3,
+        "bot_issue_comments": 3,
+        "binary_size_bot_comments": 1,
+        "review_comments": 1,
+        "commits": 2,
+        "files": 4,
+        "issue_comments_updated_after_snapshot": 0,
+        "issue_comments_created_after_snapshot": 0
+      },
+      "current_replay": {
+        "by_source": {
+          "description": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments_no_bots": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments_bots_only": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "binary_size_bot_comments_only": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "review_comments": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "commit_messages": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "code_diff": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          }
+        },
+        "combined_any_without_bot_comments": false,
+        "combined_any_with_bot_comments": false,
+        "binary_size_bot_comments_original_D6": false,
+        "all_bot_comments_original_D6": false
+      },
+      "bot_binary_size_comment_refs": [
+        {
+          "id": 3117305160,
+          "url": "https://github.com/web-infra-dev/rspack/pull/11179#issuecomment-3117305160",
+          "user_login": "github-actions[bot]",
+          "created_at": "2025-07-25T10:44:39Z",
+          "updated_at": "2025-07-28T06:40:53Z",
+          "original_D6": false
+        }
+      ]
+    },
+    {
+      "pr_number": 11320,
+      "published_D6": false,
+      "published_D6_nodiff": null,
+      "pr_url": "https://github.com/web-infra-dev/rspack/pull/11320",
+      "pr_created_at": "2025-08-06T12:56:06Z",
+      "pr_author_login": "Copilot",
+      "current_pr_body_updated_at": "2025-08-07T02:54:55Z",
+      "source_counts": {
+        "issue_comments": 10,
+        "bot_issue_comments": 6,
+        "binary_size_bot_comments": 1,
+        "review_comments": 5,
+        "commits": 16,
+        "files": 39,
+        "issue_comments_updated_after_snapshot": 0,
+        "issue_comments_created_after_snapshot": 0
+      },
+      "current_replay": {
+        "by_source": {
+          "description": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments_no_bots": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments_bots_only": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "binary_size_bot_comments_only": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "review_comments": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "commit_messages": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "code_diff": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          }
+        },
+        "combined_any_without_bot_comments": false,
+        "combined_any_with_bot_comments": false,
+        "binary_size_bot_comments_original_D6": false,
+        "all_bot_comments_original_D6": false
+      },
+      "bot_binary_size_comment_refs": [
+        {
+          "id": 3160273685,
+          "url": "https://github.com/web-infra-dev/rspack/pull/11320#issuecomment-3160273685",
+          "user_login": "github-actions[bot]",
+          "created_at": "2025-08-06T13:52:56Z",
+          "updated_at": "2025-08-06T13:52:56Z",
+          "original_D6": false
+        }
+      ]
+    },
+    {
+      "pr_number": 12058,
+      "published_D6": false,
+      "published_D6_nodiff": null,
+      "pr_url": "https://github.com/web-infra-dev/rspack/pull/12058",
+      "pr_created_at": "2025-11-01T10:15:06Z",
+      "pr_author_login": "Copilot",
+      "current_pr_body_updated_at": "2026-02-11T02:53:05Z",
+      "source_counts": {
+        "issue_comments": 4,
+        "bot_issue_comments": 3,
+        "binary_size_bot_comments": 1,
+        "review_comments": 0,
+        "commits": 2,
+        "files": 3,
+        "issue_comments_updated_after_snapshot": 0,
+        "issue_comments_created_after_snapshot": 0
+      },
+      "current_replay": {
+        "by_source": {
+          "description": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments_no_bots": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments_bots_only": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "binary_size_bot_comments_only": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "review_comments": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "commit_messages": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "code_diff": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          }
+        },
+        "combined_any_without_bot_comments": false,
+        "combined_any_with_bot_comments": false,
+        "binary_size_bot_comments_original_D6": false,
+        "all_bot_comments_original_D6": false
+      },
+      "bot_binary_size_comment_refs": [
+        {
+          "id": 3478565678,
+          "url": "https://github.com/web-infra-dev/rspack/pull/12058#issuecomment-3478565678",
+          "user_login": "github-actions[bot]",
+          "created_at": "2025-11-03T00:29:04Z",
+          "updated_at": "2025-11-03T00:29:04Z",
+          "original_D6": false
+        }
+      ]
+    },
+    {
+      "pr_number": 13714,
+      "published_D6": false,
+      "published_D6_nodiff": null,
+      "pr_url": "https://github.com/web-infra-dev/rspack/pull/13714",
+      "pr_created_at": "2026-04-15T08:38:21Z",
+      "pr_author_login": "LingyuCoder",
+      "current_pr_body_updated_at": "2026-10-22T07:47:46Z",
+      "source_counts": {
+        "issue_comments": 4,
+        "bot_issue_comments": 4,
+        "binary_size_bot_comments": 1,
+        "review_comments": 0,
+        "commits": 2,
+        "files": 1,
+        "issue_comments_updated_after_snapshot": 0,
+        "issue_comments_created_after_snapshot": 0
+      },
+      "current_replay": {
+        "by_source": {
+          "description": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments_no_bots": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments_bots_only": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "binary_size_bot_comments_only": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "review_comments": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "commit_messages": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "code_diff": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          }
+        },
+        "combined_any_without_bot_comments": false,
+        "combined_any_with_bot_comments": false,
+        "binary_size_bot_comments_original_D6": false,
+        "all_bot_comments_original_D6": false
+      },
+      "bot_binary_size_comment_refs": [
+        {
+          "id": 4250589596,
+          "url": "https://github.com/web-infra-dev/rspack/pull/13714#issuecomment-4250589596",
+          "user_login": "github-actions[bot]",
+          "created_at": "2026-04-15T08:50:45Z",
+          "updated_at": "2026-04-16T09:31:41Z",
+          "original_D6": false
+        }
+      ]
+    },
+    {
+      "pr_number": 13842,
+      "published_D6": false,
+      "published_D6_nodiff": null,
+      "pr_url": "https://github.com/web-infra-dev/rspack/pull/13842",
+      "pr_created_at": "2026-04-27T06:54:20Z",
+      "pr_author_login": "LingyuCoder",
+      "current_pr_body_updated_at": "2026-04-27T11:20:06Z",
+      "source_counts": {
+        "issue_comments": 3,
+        "bot_issue_comments": 3,
+        "binary_size_bot_comments": 1,
+        "review_comments": 2,
+        "commits": 5,
+        "files": 6,
+        "issue_comments_updated_after_snapshot": 0,
+        "issue_comments_created_after_snapshot": 0
+      },
+      "current_replay": {
+        "by_source": {
+          "description": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments_no_bots": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments_bots_only": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "binary_size_bot_comments_only": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "review_comments": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "commit_messages": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "code_diff": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          }
+        },
+        "combined_any_without_bot_comments": false,
+        "combined_any_with_bot_comments": false,
+        "binary_size_bot_comments_original_D6": false,
+        "all_bot_comments_original_D6": false
+      },
+      "bot_binary_size_comment_refs": [
+        {
+          "id": 4324907104,
+          "url": "https://github.com/web-infra-dev/rspack/pull/13842#issuecomment-4324907104",
+          "user_login": "github-actions[bot]",
+          "created_at": "2026-04-27T07:03:52Z",
+          "updated_at": "2026-04-27T09:54:26Z",
+          "original_D6": false
+        }
+      ]
+    },
+    {
+      "pr_number": 13854,
+      "published_D6": false,
+      "published_D6_nodiff": null,
+      "pr_url": "https://github.com/web-infra-dev/rspack/pull/13854",
+      "pr_created_at": "2026-04-27T11:45:10Z",
+      "pr_author_login": "LingyuCoder",
+      "current_pr_body_updated_at": "2026-04-28T05:59:46Z",
+      "source_counts": {
+        "issue_comments": 5,
+        "bot_issue_comments": 4,
+        "binary_size_bot_comments": 1,
+        "review_comments": 6,
+        "commits": 1,
+        "files": 3,
+        "issue_comments_updated_after_snapshot": 0,
+        "issue_comments_created_after_snapshot": 0
+      },
+      "current_replay": {
+        "by_source": {
+          "description": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments_no_bots": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments_bots_only": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "binary_size_bot_comments_only": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "review_comments": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "commit_messages": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "code_diff": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          }
+        },
+        "combined_any_without_bot_comments": false,
+        "combined_any_with_bot_comments": false,
+        "binary_size_bot_comments_original_D6": false,
+        "all_bot_comments_original_D6": false
+      },
+      "bot_binary_size_comment_refs": [
+        {
+          "id": 4326722025,
+          "url": "https://github.com/web-infra-dev/rspack/pull/13854#issuecomment-4326722025",
+          "user_login": "github-actions[bot]",
+          "created_at": "2026-04-27T11:52:14Z",
+          "updated_at": "2026-04-28T03:31:17Z",
+          "original_D6": false
+        }
+      ]
+    },
+    {
+      "pr_number": 13935,
+      "published_D6": false,
+      "published_D6_nodiff": null,
+      "pr_url": "https://github.com/web-infra-dev/rspack/pull/13935",
+      "pr_created_at": "2026-05-07T07:03:04Z",
+      "pr_author_login": "LingyuCoder",
+      "current_pr_body_updated_at": "2026-10-22T07:48:03Z",
+      "source_counts": {
+        "issue_comments": 4,
+        "bot_issue_comments": 3,
+        "binary_size_bot_comments": 1,
+        "review_comments": 0,
+        "commits": 1,
+        "files": 39,
+        "issue_comments_updated_after_snapshot": 0,
+        "issue_comments_created_after_snapshot": 0
+      },
+      "current_replay": {
+        "by_source": {
+          "description": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments_no_bots": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments_bots_only": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "binary_size_bot_comments_only": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "review_comments": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "commit_messages": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "code_diff": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          }
+        },
+        "combined_any_without_bot_comments": false,
+        "combined_any_with_bot_comments": false,
+        "binary_size_bot_comments_original_D6": false,
+        "all_bot_comments_original_D6": false
+      },
+      "bot_binary_size_comment_refs": [
+        {
+          "id": 4394985447,
+          "url": "https://github.com/web-infra-dev/rspack/pull/13935#issuecomment-4394985447",
+          "user_login": "github-actions[bot]",
+          "created_at": "2026-05-07T07:16:38Z",
+          "updated_at": "2026-05-07T07:16:38Z",
+          "original_D6": false
+        }
+      ]
+    },
+    {
+      "pr_number": 13968,
+      "published_D6": false,
+      "published_D6_nodiff": null,
+      "pr_url": "https://github.com/web-infra-dev/rspack/pull/13968",
+      "pr_created_at": "2026-05-09T06:38:39Z",
+      "pr_author_login": "LingyuCoder",
+      "current_pr_body_updated_at": "2026-05-11T09:20:14Z",
+      "source_counts": {
+        "issue_comments": 8,
+        "bot_issue_comments": 7,
+        "binary_size_bot_comments": 1,
+        "review_comments": 6,
+        "commits": 14,
+        "files": 3,
+        "issue_comments_updated_after_snapshot": 0,
+        "issue_comments_created_after_snapshot": 0
+      },
+      "current_replay": {
+        "by_source": {
+          "description": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments_no_bots": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments_bots_only": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "binary_size_bot_comments_only": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "review_comments": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "commit_messages": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "code_diff": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          }
+        },
+        "combined_any_without_bot_comments": false,
+        "combined_any_with_bot_comments": false,
+        "binary_size_bot_comments_original_D6": false,
+        "all_bot_comments_original_D6": false
+      },
+      "bot_binary_size_comment_refs": [
+        {
+          "id": 4411770650,
+          "url": "https://github.com/web-infra-dev/rspack/pull/13968#issuecomment-4411770650",
+          "user_login": "github-actions[bot]",
+          "created_at": "2026-05-09T06:49:22Z",
+          "updated_at": "2026-05-11T06:27:43Z",
+          "original_D6": false
+        }
+      ]
+    },
+    {
+      "pr_number": 13973,
+      "published_D6": false,
+      "published_D6_nodiff": null,
+      "pr_url": "https://github.com/web-infra-dev/rspack/pull/13973",
+      "pr_created_at": "2026-05-09T08:15:17Z",
+      "pr_author_login": "hardfist",
+      "current_pr_body_updated_at": "2026-06-12T02:59:28Z",
+      "source_counts": {
+        "issue_comments": 4,
+        "bot_issue_comments": 4,
+        "binary_size_bot_comments": 1,
+        "review_comments": 2,
+        "commits": 1,
+        "files": 4,
+        "issue_comments_updated_after_snapshot": 0,
+        "issue_comments_created_after_snapshot": 0
+      },
+      "current_replay": {
+        "by_source": {
+          "description": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments_no_bots": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments_bots_only": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "binary_size_bot_comments_only": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "review_comments": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "commit_messages": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "code_diff": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          }
+        },
+        "combined_any_without_bot_comments": false,
+        "combined_any_with_bot_comments": false,
+        "binary_size_bot_comments_original_D6": false,
+        "all_bot_comments_original_D6": false
+      },
+      "bot_binary_size_comment_refs": [
+        {
+          "id": 4412038565,
+          "url": "https://github.com/web-infra-dev/rspack/pull/13973#issuecomment-4412038565",
+          "user_login": "github-actions[bot]",
+          "created_at": "2026-05-09T08:28:12Z",
+          "updated_at": "2026-05-11T03:26:28Z",
+          "original_D6": false
+        }
+      ]
+    },
+    {
+      "pr_number": 13975,
+      "published_D6": false,
+      "published_D6_nodiff": null,
+      "pr_url": "https://github.com/web-infra-dev/rspack/pull/13975",
+      "pr_created_at": "2026-05-09T10:52:18Z",
+      "pr_author_login": "hardfist",
+      "current_pr_body_updated_at": "2026-06-12T02:59:26Z",
+      "source_counts": {
+        "issue_comments": 3,
+        "bot_issue_comments": 3,
+        "binary_size_bot_comments": 1,
+        "review_comments": 0,
+        "commits": 4,
+        "files": 8,
+        "issue_comments_updated_after_snapshot": 0,
+        "issue_comments_created_after_snapshot": 0
+      },
+      "current_replay": {
+        "by_source": {
+          "description": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments_no_bots": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments_bots_only": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "binary_size_bot_comments_only": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "review_comments": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "commit_messages": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "code_diff": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          }
+        },
+        "combined_any_without_bot_comments": false,
+        "combined_any_with_bot_comments": false,
+        "binary_size_bot_comments_original_D6": false,
+        "all_bot_comments_original_D6": false
+      },
+      "bot_binary_size_comment_refs": [
+        {
+          "id": 4412364764,
+          "url": "https://github.com/web-infra-dev/rspack/pull/13975#issuecomment-4412364764",
+          "user_login": "github-actions[bot]",
+          "created_at": "2026-05-09T11:01:36Z",
+          "updated_at": "2026-05-09T11:01:36Z",
+          "original_D6": false
+        }
+      ]
+    },
+    {
+      "pr_number": 14101,
+      "published_D6": false,
+      "published_D6_nodiff": null,
+      "pr_url": "https://github.com/web-infra-dev/rspack/pull/14101",
+      "pr_created_at": "2026-05-20T11:34:31Z",
+      "pr_author_login": "intellild",
+      "current_pr_body_updated_at": "2026-05-21T02:43:48Z",
+      "source_counts": {
+        "issue_comments": 8,
+        "bot_issue_comments": 6,
+        "binary_size_bot_comments": 1,
+        "review_comments": 0,
+        "commits": 1,
+        "files": 1,
+        "issue_comments_updated_after_snapshot": 0,
+        "issue_comments_created_after_snapshot": 0
+      },
+      "current_replay": {
+        "by_source": {
+          "description": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments_no_bots": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "issue_comments_bots_only": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "binary_size_bot_comments_only": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "review_comments": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "commit_messages": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          },
+          "code_diff": {
+            "detected": false,
+            "matches": 0,
+            "first_matches": []
+          }
+        },
+        "combined_any_without_bot_comments": false,
+        "combined_any_with_bot_comments": false,
+        "binary_size_bot_comments_original_D6": false,
+        "all_bot_comments_original_D6": false
+      },
+      "bot_binary_size_comment_refs": [
+        {
+          "id": 4498047429,
+          "url": "https://github.com/web-infra-dev/rspack/pull/14101#issuecomment-4498047429",
+          "user_login": "github-actions[bot]",
+          "created_at": "2026-05-20T11:47:28Z",
+          "updated_at": "2026-05-20T11:47:28Z",
+          "original_D6": false
+        }
+      ]
+    }
+  ]
+}

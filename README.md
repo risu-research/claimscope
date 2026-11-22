@@ -44,7 +44,7 @@ python3 code/replay_public.py --download --cache data/rq3_labels.csv --output bu
 - `code/all_metric_repo_influence.py`: 440 repositories × 10 metric flags
 - `code/test_stage*.py`: 39 analysis-contract tests
 - `results/`: frozen baseline JSON outputs
-- `evidence/`: selected public PR-comment checks dated October 10, 2026
+- `evidence/`: source inventory, original-rule replay, and comment-boundary audit
 
 ## Scope
 
@@ -62,4 +62,18 @@ The [97-PR evidence ledger](evidence/rspack_97_source_inventory_20261122.csv) re
 python3 code/rspack_source_inventory.py --max-prs 5
 ```
 
-The full source-inventory collection uses public GitHub API endpoints and an optional `GITHUB_TOKEN` to increase the API request quota. The archived text-matching replay is the next research stage.
+The full source-inventory collection uses public GitHub API endpoints and an optional `GITHUB_TOKEN` to increase the API request quota. The original-rule replay and comment-boundary results are documented in [Rspack D6 evidence audit](evidence/RSPACK_D6_EVIDENCE_AUDIT.md).
+
+## Original-rule replay on Rspack comments
+
+The pinned upstream extractor at commit `64432e0b6ed7791bbfa929c6c183fc76c75b5d58` was executed against November 22, 2026 UTC public GitHub issue comments for all 97 Rspack PRs. The concatenated-comment replay matched all 97 released D6 labels. Of 83 D6-positive PRs, 18 produced a D6 match within at least one individual comment. The other 65 produced D6 only when comment bodies were concatenated without a boundary marker.
+
+All 83 positive matches also appeared in the concatenated bot-comment layer. In the 11 published D6-negative PRs with a `Binary Size-limit` bot comment, the nearest D6 cue-to-quantity distances measured 19–23 tokens against the original 12-token threshold. Removing the `Comparing` line changed all 11 bot-comment replay results to D6-positive.
+
+- [Per-PR comment-boundary results](results/rspack_97_comment_boundary_audit.csv)
+- [Full-cohort counts and provenance](results/rspack_97_comment_boundary_summary.json)
+- [Eleven-case rule diagnostics](results/rspack_11_d6_rule_summary.csv)
+- [Audit protocol and interpretation](evidence/RSPACK_D6_EVIDENCE_AUDIT.md)
+- [Executable 97-PR source audit](code/audit_rspack_97_comment_boundaries.py)
+
+The audit applies the exact pinned original matching function to currently accessible public comments. The source study's archived evidence snapshot, independent source-specific matches, and CI workflow metadata remain separate replication targets.
