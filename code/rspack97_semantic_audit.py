@@ -155,6 +155,17 @@ def collect_one(inv: dict, token: str | None) -> dict:
     selected = sorted(reports, key=lambda r: (r["kind"] != "binary",
                           r["commit_relation"] not in ("head", "listed_pr_commit"),
                           r["comment_id"]))
+    # Keep one full qualifying witness per PR; preserve IDs and digests for
+    # other qualifying bot reports without retaining their potentially large
+    # benchmark tables. This limits archived source text to the minimum
+    # needed to reproduce the report-presence decision.
+    if selected:
+        for unused in selected[1:]:
+            other.append({k: unused[k] for k in
+                          ("comment_id", "comment_url", "author",
+                           "created_at", "updated_at", "body_sha256", "kind")})
+            other[-1].update(is_structured=True, eligible=True)
+        selected = selected[:1]
     # Only needed source bodies are retained. For the three no-report PRs,
     # bot comment bodies are retained to independently replay a negative.
     absent_bot_bodies = []
@@ -277,7 +288,9 @@ def run_replay(snapshot_file: Path, json_out: Path = RESULT_JSON,
     inventory, baseline65, add32, witnesses = source_inputs()
     snapshot_bytes = snapshot_file.read_bytes()
     data = json.loads(snapshot_bytes)
-    if data.get("schema") != SCHEMA or data.get("source_repo") != REPO or data.get("cutoff_utc") != SOURCE_CUTOFF:
+    if (data.get("schema") != SCHEMA or data.get("source_repo") != REPO
+            or data.get("cutoff_utc") != SOURCE_CUTOFF
+            or data.get("source_label_sha256") != SOURCE_LABEL_SHA256):
         raise ValueError("Unrecognized or incompatible snapshot")
     by_id = {int(r["pr_number"]): r for r in data["prs"]}
     if len(by_id) != 97 or set(by_id) != {int(r["pr_number"]) for r in inventory}:
