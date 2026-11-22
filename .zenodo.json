@@ -1,0 +1,31 @@
+{
+  "creators": [
+    {
+      "name": "Lee, Moon Hwan",
+      "affiliation": "RISU Institute"
+    }
+  ],
+  "title": "ClaimScope: Reproducible Repository-Level Reanalysis of Artifact-Size Reporting in Agentic Pull Requests",
+  "description": "Research software and reproducibility artifact for repository-level D6 metric analysis of 1,699 published performance pull requests. Includes hash-pinned source labels, source-linked Rspack audits, a 97-PR automated size-report census, a frozen 476-comment temporal metadata ledger, public-source match traces, deterministic replay scripts, and integrity tests. The original August 2026 private evidence snapshot is not included; historical inputs and contemporarily retrievable public GitHub records are distinguished. Third-party source labels, bot reports and original extractor code remain attributed to their sources and are governed by their original terms.",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "mit",
+  "version": "1.0.0",
+  "language": "eng",
+  "keywords": [
+    "software engineering",
+    "coding agents",
+    "reproducible research",
+    "pull request mining",
+    "artifact size",
+    "repository heterogeneity",
+    "GitHub evidence"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/PurdueDualityLab/EMSE-perf-pr-study",
+      "relation": "isDerivedFrom",
+      "scheme": "url"
+    }
+  ]
+}
