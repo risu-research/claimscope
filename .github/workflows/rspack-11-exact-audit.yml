@@ -1,0 +1,28 @@
+name: Replay original D6 extractor on 11 Rspack PRs
+on:
+  push:
+    paths:
+      - '.github/workflows/rspack-11-exact-audit.yml'
+      - 'code/audit_rspack_11_exact.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Replay the pinned original extractor against 11 current public PRs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python code/audit_rspack_11_exact.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: rspack-11-original-extractor-replay
+          path: results/rspack_11_exact_extractor.json
+          retention-days: 30
