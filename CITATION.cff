@@ -9,6 +9,7 @@ authors:
 repository-code: https://github.com/risu-research/claimscope
 url: https://github.com/risu-research/claimscope
 version: 1.0.0
+doi: 10.5281/zenodo.24434117
 date-released: 2026-11-22
 license: MIT
 keywords:
