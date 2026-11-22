@@ -1,0 +1,33 @@
+name: Audit semantic artifact-size reports in Rspack 65
+on:
+  push:
+    paths:
+      - '.github/workflows/rspack65-semantic-size.yml'
+      - 'code/semantic_rspack65_size.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  semantic-size:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test frozen independent evidence rubric
+        run: python -m unittest discover -s code -p 'test_semantic_rspack65_size.py' -v
+      - name: Review complete 65 PR threads without D6 extractor
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python code/semantic_rspack65_size.py --max-workers 5
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: rspack65-semantic-artifact-size
+          path: |
+            results/rspack65_semantic_size_audit.json
+            results/rspack65_semantic_size_audit.csv
+            results/rspack65_semantic_size_errors.json
+          retention-days: 30
