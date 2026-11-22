@@ -1,5 +1,8 @@
 """Non-network tests for a distinct source-observation rubric."""
 import unittest
+import csv
+import json
+from pathlib import Path
 from semantic_rspack65_size import binary_report,rsdoctor_report,summarize
 
 class SemanticSizeRubricTests(unittest.TestCase):
@@ -32,5 +35,26 @@ class SemanticSizeRubricTests(unittest.TestCase):
         for direction in ('increased','decreased'):
             v=binary_report(f'## 📦 Binary Size-limit\n❌ Size {direction} by 4.00KB from 62.86MB to 62.87MB')
             self.assertTrue(v['structured']);self.assertEqual(v['direction'],direction)
+
+    def test_frozen_full_cohort_and_independent_extractor(self):
+        root=Path(__file__).resolve().parents[1]
+        semantic=json.loads((root/'results/rspack65_semantic_size_audit.json').read_text())
+        other=json.loads((root/'results/rspack65_other_source_replay.json').read_text())
+        pairs=list(csv.DictReader((root/'results/rspack_65_comment_pairs.csv').open(newline='')))
+        rows=semantic['rows']
+        self.assertEqual(len(rows),65)
+        self.assertEqual(len({r['pr_number'] for r in rows}),65)
+        self.assertEqual({r['pr_number'] for r in rows},{int(p['pr_number']) for p in pairs})
+        self.assertEqual({r['pr_number'] for r in rows},{r['pr_number'] for r in other['rows']})
+        self.assertTrue(all(r['report_presence']=='confirmed' for r in rows))
+        self.assertTrue(all(r['pr_revision_attribution']=='commit_matched' for r in rows))
+        self.assertTrue(all(r['chosen_evidence']['source_kind']=='binary' for r in rows))
+        self.assertTrue(all(r['chosen_evidence']['sha_relation']=='current_head' for r in rows))
+        self.assertTrue(all(r['chosen_evidence']['before_historical_cutoff'] for r in rows))
+        self.assertTrue(all(not r['retained_when_issue_boundaries_preserved'] for r in other['rows']))
+        from collections import Counter
+        self.assertEqual(Counter(r['arm'] for r in rows), Counter({'agentic':60,'human_candidate':5}))
+        self.assertEqual(Counter(r['chosen_evidence']['size_measurement']['direction'] for r in rows),
+            Counter({'increased':37,'decreased':23,'unchanged':5}))
 
 if __name__=='__main__':unittest.main()

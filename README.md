@@ -115,3 +115,9 @@ With issue-comment boundaries preserved, the observed 65-case replay produces th
 - [Offline full-cohort integration](code/sensitivity_rspack65_observed_channels.py)
 
 The comparison is a controlled re-extraction using current public GitHub records. The original August 2026 evidence snapshot remains a separate archival verification target.
+
+## Semantic size-report presence in the 65 boundary-dependent PRs
+
+A separate, source-based audit tested whether each Rspack PR contains a concrete observed artifact-size measurement. **All 65 contain a `Binary Size-limit` report tied to the current PR head:** 37 report increases, 23 decreases, and five unchanged sizes. All 65 also contain Rsdoctor project-size tables. The audit rule checks numeric byte-based observations and source revisions, independently of the upstream D6 regex.
+
+This is a critical distinction for interpreting the earlier +2.486 pp boundary-preserving scenario: that number measures **D6 extractor sensitivity**, whereas the 65 PRs have genuine reported size measurements in their public discussion threads. [Decision rule and interpretation](evidence/RSPACK65_SEMANTIC_SIZE_PRESENCE.md), [65-row source ledger](results/rspack65_semantic_size_audit.csv), and [replay code](code/semantic_rspack65_size.py) document the audit. The original historical private snapshot remains a separate replication target.
