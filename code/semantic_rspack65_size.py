@@ -36,7 +36,7 @@ CSV=ROOT/'results/rspack65_semantic_size_audit.csv'
 
 # A GitHub Actions report is not an agent-authored claim. These patterns verify
 # the observation that was made, not the reliability or causal meaning of it.
-UNITS=r'(?:B|KB|MB|GB|TB|KiB|MiB|GiB|TiB)'
+UNITS=r'(?:bytes?|B|KB|MB|GB|TB|KiB|MiB|GiB|TiB)'
 NUMBER=r'\d+(?:\.\d+)?'
 BINARY_DELTA=re.compile(r'\bSize\s+(?P<direction>increased|decreased)\s+by\s+'
     rf'(?P<delta>{NUMBER})\s*(?P<delta_unit>{UNITS})\s+from\s+'

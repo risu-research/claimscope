@@ -9,6 +9,11 @@ class SemanticSizeRubricTests(unittest.TestCase):
         v=binary_report(t)
         self.assertTrue(v['structured']);self.assertEqual(v['before'],'48.65MB');self.assertEqual(v['after'],'48.61MB')
         self.assertEqual(v['source_commit'],a);self.assertEqual(v['comparator_commit'],b)
+    def test_literal_bytes_without_space(self):
+        for delta in ('288bytes','416bytes'):
+            v=binary_report(f'## 📦 Binary Size-limit\n❌ Size increased by {delta} from 49.09MB to 49.09MB')
+            self.assertTrue(v['structured']);self.assertEqual(v['delta'],delta)
+
     def test_unchanged_is_report_not_gain(self):
         v=binary_report('## 📦 Binary Size-limit\n\n🙈 Size remains the same at 62.85MB')
         self.assertTrue(v['structured']);self.assertEqual(v['direction'],'unchanged')
