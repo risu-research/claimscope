@@ -1,0 +1,31 @@
+name: Trace Rspack D6 matches across comment boundaries
+on:
+  push:
+    paths:
+      - '.github/workflows/rspack65-comment-pairs.yml'
+      - 'code/audit_rspack_65_comment_pairs.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  trace:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Replay original D6 spans and link each span to GitHub comment IDs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python code/audit_rspack_65_comment_pairs.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: rspack65-comment-pair-trace
+          path: |
+            results/rspack_65_comment_pairs.csv
+            results/rspack_65_comment_pair_summary.json
+            results/rspack_65_comment_pair_audit.json
+          retention-days: 30
