@@ -77,6 +77,8 @@ jobs:
           git add evidence/rspack97_semantic_public_snapshot.json results/rspack97_semantic_size_audit.json results/rspack97_semantic_size_audit.csv results/rspack97_semantic_manifest.json
           if ! git diff --cached --quiet; then
             git commit -m "Freeze reproducible 97-PR public semantic evidence"
+            git fetch origin audit/rspack97-frozen-semantic-20261122
+            git rebase origin/audit/rspack97-frozen-semantic-20261122
             git push origin HEAD:audit/rspack97-frozen-semantic-20261122
           fi
       - uses: actions/upload-artifact@v4
