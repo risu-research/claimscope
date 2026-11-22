@@ -13,10 +13,10 @@
   "incremental_32_source_sha256": "659f19b43a3377392f7d917b65449fb6c216f24e64ef3bd29816f3c3ae05c28b",
   "inventory_sha256": "039c8161e85c31940fd2c9333f21d8ae0a43219df694812538dfe45ebede776e",
   "replay_command": "python3 code/rspack97_semantic_audit.py --offline",
-  "results_csv_sha256": "0a150465686ea758fa1f2cf218d7b629a67f6104d8046474e0a8311a34c9814b",
-  "results_json_sha256": "d0200dbae4baae2182fe693a9db17c18a3000ac1f633474999464ac97a1f6aa2",
+  "results_csv_sha256": "0785b3d475afc78e290089cf92712592000e9fc7a028a88ed76ee0870665db32",
+  "results_json_sha256": "8b3d92aeea14337a0e3d60acfc1224e86cccfe9f2d0e82e6a66fb2f489b09c07",
   "rows": 97,
   "schema": "claimscope/rspack97-semantic-size/v1",
   "source_label_sha256": "c31616088cac4ea8d2369b942b78f08e39356250a0b452aba5c9402e05e070b9",
-  "source_snapshot_sha256": "811a096385d05bbf338faa00eee0d1bcb3e63caaa07605ff25fd9655345f2b1c"
+  "source_snapshot_sha256": "add04994a389c1e61a8e7b4c3179a244db9096b98cbf5e4d5b469d1e491097d5"
 }

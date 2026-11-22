@@ -123,7 +123,7 @@
     {
       "bot_comment_count": 6,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 6,
       "pr_number": 12560,
       "published_D6": true,
@@ -142,7 +142,7 @@
     {
       "bot_comment_count": 3,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 3,
       "pr_number": 13010,
       "published_D6": true,
@@ -161,7 +161,7 @@
     {
       "bot_comment_count": 5,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 5,
       "pr_number": 13020,
       "published_D6": true,
@@ -180,7 +180,7 @@
     {
       "bot_comment_count": 7,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 9,
       "pr_number": 13024,
       "published_D6": true,
@@ -199,7 +199,7 @@
     {
       "bot_comment_count": 5,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 5,
       "pr_number": 13068,
       "published_D6": true,
@@ -218,7 +218,7 @@
     {
       "bot_comment_count": 3,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 3,
       "pr_number": 13069,
       "published_D6": true,
@@ -237,7 +237,7 @@
     {
       "bot_comment_count": 3,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 3,
       "pr_number": 13130,
       "published_D6": true,
@@ -256,7 +256,7 @@
     {
       "bot_comment_count": 6,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 6,
       "pr_number": 13131,
       "published_D6": true,
@@ -275,7 +275,7 @@
     {
       "bot_comment_count": 4,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 4,
       "pr_number": 13133,
       "published_D6": true,
@@ -294,7 +294,7 @@
     {
       "bot_comment_count": 5,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 7,
       "pr_number": 13142,
       "published_D6": true,
@@ -313,7 +313,7 @@
     {
       "bot_comment_count": 4,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 4,
       "pr_number": 13143,
       "published_D6": true,
@@ -332,7 +332,7 @@
     {
       "bot_comment_count": 5,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 5,
       "pr_number": 13158,
       "published_D6": true,
@@ -351,7 +351,7 @@
     {
       "bot_comment_count": 4,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 4,
       "pr_number": 13191,
       "published_D6": true,
@@ -370,7 +370,7 @@
     {
       "bot_comment_count": 4,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 4,
       "pr_number": 13227,
       "published_D6": true,
@@ -389,7 +389,7 @@
     {
       "bot_comment_count": 7,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 8,
       "pr_number": 13228,
       "published_D6": true,
@@ -408,7 +408,7 @@
     {
       "bot_comment_count": 4,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 5,
       "pr_number": 13229,
       "published_D6": true,
@@ -427,7 +427,7 @@
     {
       "bot_comment_count": 8,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 9,
       "pr_number": 13243,
       "published_D6": true,
@@ -446,7 +446,7 @@
     {
       "bot_comment_count": 4,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 4,
       "pr_number": 13272,
       "published_D6": true,
@@ -465,7 +465,7 @@
     {
       "bot_comment_count": 5,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 6,
       "pr_number": 13306,
       "published_D6": true,
@@ -484,7 +484,7 @@
     {
       "bot_comment_count": 4,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 4,
       "pr_number": 13309,
       "published_D6": true,
@@ -503,7 +503,7 @@
     {
       "bot_comment_count": 3,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 3,
       "pr_number": 13338,
       "published_D6": true,
@@ -522,7 +522,7 @@
     {
       "bot_comment_count": 3,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 3,
       "pr_number": 13478,
       "published_D6": true,
@@ -541,7 +541,7 @@
     {
       "bot_comment_count": 5,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 6,
       "pr_number": 13490,
       "published_D6": true,
@@ -560,7 +560,7 @@
     {
       "bot_comment_count": 5,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 5,
       "pr_number": 13493,
       "published_D6": true,
@@ -579,7 +579,7 @@
     {
       "bot_comment_count": 4,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 4,
       "pr_number": 13495,
       "published_D6": true,
@@ -598,7 +598,7 @@
     {
       "bot_comment_count": 5,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 5,
       "pr_number": 13501,
       "published_D6": true,
@@ -617,7 +617,7 @@
     {
       "bot_comment_count": 5,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 5,
       "pr_number": 13509,
       "published_D6": true,
@@ -636,7 +636,7 @@
     {
       "bot_comment_count": 5,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 6,
       "pr_number": 13513,
       "published_D6": true,
@@ -655,7 +655,7 @@
     {
       "bot_comment_count": 5,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 5,
       "pr_number": 13535,
       "published_D6": true,
@@ -674,7 +674,7 @@
     {
       "bot_comment_count": 4,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 4,
       "pr_number": 13536,
       "published_D6": true,
@@ -693,7 +693,7 @@
     {
       "bot_comment_count": 4,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 4,
       "pr_number": 13545,
       "published_D6": true,
@@ -712,7 +712,7 @@
     {
       "bot_comment_count": 4,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 4,
       "pr_number": 13556,
       "published_D6": true,
@@ -731,7 +731,7 @@
     {
       "bot_comment_count": 4,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 4,
       "pr_number": 13564,
       "published_D6": true,
@@ -750,7 +750,7 @@
     {
       "bot_comment_count": 4,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 4,
       "pr_number": 13566,
       "published_D6": true,
@@ -769,7 +769,7 @@
     {
       "bot_comment_count": 5,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 6,
       "pr_number": 13578,
       "published_D6": true,
@@ -788,7 +788,7 @@
     {
       "bot_comment_count": 3,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 4,
       "pr_number": 13579,
       "published_D6": true,
@@ -807,7 +807,7 @@
     {
       "bot_comment_count": 4,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 5,
       "pr_number": 13581,
       "published_D6": true,
@@ -826,7 +826,7 @@
     {
       "bot_comment_count": 7,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 7,
       "pr_number": 13609,
       "published_D6": true,
@@ -845,7 +845,7 @@
     {
       "bot_comment_count": 5,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 5,
       "pr_number": 13617,
       "published_D6": true,
@@ -864,7 +864,7 @@
     {
       "bot_comment_count": 3,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 3,
       "pr_number": 13631,
       "published_D6": true,
@@ -883,7 +883,7 @@
     {
       "bot_comment_count": 4,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 4,
       "pr_number": 13634,
       "published_D6": true,
@@ -902,7 +902,7 @@
     {
       "bot_comment_count": 4,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 4,
       "pr_number": 13646,
       "published_D6": true,
@@ -921,7 +921,7 @@
     {
       "bot_comment_count": 4,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 4,
       "pr_number": 13647,
       "published_D6": true,
@@ -940,7 +940,7 @@
     {
       "bot_comment_count": 6,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 6,
       "pr_number": 13662,
       "published_D6": true,
@@ -959,7 +959,7 @@
     {
       "bot_comment_count": 8,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 9,
       "pr_number": 13668,
       "published_D6": true,
@@ -978,7 +978,7 @@
     {
       "bot_comment_count": 4,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 5,
       "pr_number": 13674,
       "published_D6": true,
@@ -997,7 +997,7 @@
     {
       "bot_comment_count": 4,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 4,
       "pr_number": 13714,
       "published_D6": false,
@@ -1016,7 +1016,7 @@
     {
       "bot_comment_count": 11,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 11,
       "pr_number": 13759,
       "published_D6": true,
@@ -1035,7 +1035,7 @@
     {
       "bot_comment_count": 4,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 5,
       "pr_number": 13774,
       "published_D6": true,
@@ -1054,7 +1054,7 @@
     {
       "bot_comment_count": 3,
       "direction": "unchanged",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 3,
       "pr_number": 13787,
       "published_D6": true,
@@ -1073,7 +1073,7 @@
     {
       "bot_comment_count": 5,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 5,
       "pr_number": 13788,
       "published_D6": true,
@@ -1092,7 +1092,7 @@
     {
       "bot_comment_count": 3,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 3,
       "pr_number": 13806,
       "published_D6": true,
@@ -1111,7 +1111,7 @@
     {
       "bot_comment_count": 4,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 4,
       "pr_number": 13808,
       "published_D6": true,
@@ -1130,7 +1130,7 @@
     {
       "bot_comment_count": 5,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 6,
       "pr_number": 13821,
       "published_D6": true,
@@ -1149,7 +1149,7 @@
     {
       "bot_comment_count": 3,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 3,
       "pr_number": 13841,
       "published_D6": true,
@@ -1168,7 +1168,7 @@
     {
       "bot_comment_count": 3,
       "direction": "unchanged",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 3,
       "pr_number": 13842,
       "published_D6": false,
@@ -1187,7 +1187,7 @@
     {
       "bot_comment_count": 5,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 6,
       "pr_number": 13851,
       "published_D6": true,
@@ -1206,7 +1206,7 @@
     {
       "bot_comment_count": 4,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 5,
       "pr_number": 13854,
       "published_D6": false,
@@ -1225,7 +1225,7 @@
     {
       "bot_comment_count": 3,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 3,
       "pr_number": 13858,
       "published_D6": true,
@@ -1244,7 +1244,7 @@
     {
       "bot_comment_count": 6,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 7,
       "pr_number": 13859,
       "published_D6": true,
@@ -1263,7 +1263,7 @@
     {
       "bot_comment_count": 6,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 7,
       "pr_number": 13873,
       "published_D6": true,
@@ -1282,7 +1282,7 @@
     {
       "bot_comment_count": 17,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 17,
       "pr_number": 13876,
       "published_D6": true,
@@ -1301,7 +1301,7 @@
     {
       "bot_comment_count": 5,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 5,
       "pr_number": 13926,
       "published_D6": true,
@@ -1339,7 +1339,7 @@
     {
       "bot_comment_count": 3,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 4,
       "pr_number": 13935,
       "published_D6": false,
@@ -1358,7 +1358,7 @@
     {
       "bot_comment_count": 5,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 5,
       "pr_number": 13936,
       "published_D6": true,
@@ -1377,7 +1377,7 @@
     {
       "bot_comment_count": 3,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 3,
       "pr_number": 13951,
       "published_D6": true,
@@ -1396,7 +1396,7 @@
     {
       "bot_comment_count": 3,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 4,
       "pr_number": 13955,
       "published_D6": true,
@@ -1415,7 +1415,7 @@
     {
       "bot_comment_count": 7,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 8,
       "pr_number": 13968,
       "published_D6": false,
@@ -1434,7 +1434,7 @@
     {
       "bot_comment_count": 4,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 4,
       "pr_number": 13973,
       "published_D6": false,
@@ -1453,7 +1453,7 @@
     {
       "bot_comment_count": 3,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 3,
       "pr_number": 13975,
       "published_D6": false,
@@ -1472,7 +1472,7 @@
     {
       "bot_comment_count": 3,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 3,
       "pr_number": 13990,
       "published_D6": true,
@@ -1491,7 +1491,7 @@
     {
       "bot_comment_count": 5,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 6,
       "pr_number": 14013,
       "published_D6": true,
@@ -1510,7 +1510,7 @@
     {
       "bot_comment_count": 4,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 5,
       "pr_number": 14014,
       "published_D6": true,
@@ -1529,7 +1529,7 @@
     {
       "bot_comment_count": 3,
       "direction": "unchanged",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 3,
       "pr_number": 14019,
       "published_D6": true,
@@ -1548,7 +1548,7 @@
     {
       "bot_comment_count": 3,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 3,
       "pr_number": 14020,
       "published_D6": true,
@@ -1567,7 +1567,7 @@
     {
       "bot_comment_count": 6,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 10,
       "pr_number": 14041,
       "published_D6": true,
@@ -1586,7 +1586,7 @@
     {
       "bot_comment_count": 4,
       "direction": "unchanged",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 4,
       "pr_number": 14042,
       "published_D6": true,
@@ -1605,7 +1605,7 @@
     {
       "bot_comment_count": 4,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 4,
       "pr_number": 14075,
       "published_D6": true,
@@ -1624,7 +1624,7 @@
     {
       "bot_comment_count": 3,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 3,
       "pr_number": 14097,
       "published_D6": true,
@@ -1643,7 +1643,7 @@
     {
       "bot_comment_count": 6,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 8,
       "pr_number": 14101,
       "published_D6": false,
@@ -1662,7 +1662,7 @@
     {
       "bot_comment_count": 4,
       "direction": "unchanged",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 4,
       "pr_number": 14103,
       "published_D6": true,
@@ -1681,7 +1681,7 @@
     {
       "bot_comment_count": 5,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 5,
       "pr_number": 14148,
       "published_D6": true,
@@ -1700,7 +1700,7 @@
     {
       "bot_comment_count": 4,
       "direction": "unchanged",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 4,
       "pr_number": 14149,
       "published_D6": true,
@@ -1719,7 +1719,7 @@
     {
       "bot_comment_count": 4,
       "direction": "unchanged",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 4,
       "pr_number": 14164,
       "published_D6": true,
@@ -1738,7 +1738,7 @@
     {
       "bot_comment_count": 3,
       "direction": "unchanged",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 3,
       "pr_number": 14172,
       "published_D6": true,
@@ -1757,7 +1757,7 @@
     {
       "bot_comment_count": 8,
       "direction": "unchanged",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 9,
       "pr_number": 14186,
       "published_D6": true,
@@ -1776,7 +1776,7 @@
     {
       "bot_comment_count": 3,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 3,
       "pr_number": 14196,
       "published_D6": true,
@@ -1795,7 +1795,7 @@
     {
       "bot_comment_count": 3,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 3,
       "pr_number": 14205,
       "published_D6": true,
@@ -1814,7 +1814,7 @@
     {
       "bot_comment_count": 5,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 5,
       "pr_number": 14209,
       "published_D6": true,
@@ -1833,7 +1833,7 @@
     {
       "bot_comment_count": 3,
       "direction": "decreased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 3,
       "pr_number": 14229,
       "published_D6": true,
@@ -1852,7 +1852,7 @@
     {
       "bot_comment_count": 4,
       "direction": "increased",
-      "eligible_report_count": 2,
+      "eligible_report_count": 1,
       "issue_comment_count": 4,
       "pr_number": 14242,
       "published_D6": true,
@@ -1870,9 +1870,9 @@
     }
   ],
   "schema": "claimscope/rspack97-semantic-size/v1",
-  "snapshot_collected_at_utc": "2026-11-22T05:01:28Z",
+  "snapshot_collected_at_utc": "2026-11-22T05:04:21Z",
   "source_label_sha256": "c31616088cac4ea8d2369b942b78f08e39356250a0b452aba5c9402e05e070b9",
   "source_repository": "web-infra-dev/rspack",
-  "source_snapshot_sha256": "811a096385d05bbf338faa00eee0d1bcb3e63caaa07605ff25fd9655345f2b1c",
+  "source_snapshot_sha256": "add04994a389c1e61a8e7b4c3179a244db9096b98cbf5e4d5b469d1e491097d5",
   "study": "Rspack subset of 1,699 PRs from the pinned public Peng et al. label export"
 }
