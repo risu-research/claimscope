@@ -1,0 +1,22 @@
+{
+  "counts": {
+    "D6_negative_with_report": 11,
+    "D6_positive": 83,
+    "head": 91,
+    "listed_commit": 2,
+    "no_thread_report": 3,
+    "reports": 94,
+    "sample": 97,
+    "unverified_commit": 1
+  },
+  "frozen_65_source_sha256": "12168602fb520a98510362eeb991a5982eaab7372c9d945401cbb7fc4020c2db",
+  "incremental_32_source_sha256": "659f19b43a3377392f7d917b65449fb6c216f24e64ef3bd29816f3c3ae05c28b",
+  "inventory_sha256": "039c8161e85c31940fd2c9333f21d8ae0a43219df694812538dfe45ebede776e",
+  "replay_command": "python3 code/rspack97_semantic_audit.py --offline",
+  "results_csv_sha256": "0785b3d475afc78e290089cf92712592000e9fc7a028a88ed76ee0870665db32",
+  "results_json_sha256": "c0191b5b93a4ac8ac1ecf10ff5ed5521bd7044817cf3ae6b7d154683e2480e76",
+  "rows": 97,
+  "schema": "claimscope/rspack97-semantic-size/v1",
+  "source_label_sha256": "c31616088cac4ea8d2369b942b78f08e39356250a0b452aba5c9402e05e070b9",
+  "source_snapshot_sha256": "1fa3c600fce11df25db40351494582ffb1513e3bf4eef1aac6229fbbb5645068"
+}
