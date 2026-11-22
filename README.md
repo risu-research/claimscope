@@ -77,3 +77,11 @@ All 83 positive matches also appeared in the concatenated bot-comment layer. In 
 - [Executable 97-PR source audit](code/audit_rspack_97_comment_boundaries.py)
 
 The audit applies the exact pinned original matching function to currently accessible public comments. The source study's archived evidence snapshot, independent source-specific matches, and CI workflow metadata remain separate replication targets.
+
+## Original-match comment pair trace
+
+The 65 Rspack PRs with boundary-dependent D6 labels contain 72 matched cue/quantity pairs. All 72 link two adjacent `github-actions[bot]` issue comments. Each pair independently produces a D6 match when its two comment bodies are joined. A 32-token boundary separator removes every pair's D6 match.
+
+The [65-PR pair ledger](results/rspack_65_comment_pairs.csv) records the source GitHub comment IDs, URLs, bot accounts, timestamps, matched expressions, and upstream rule IDs. The [source-level audit](evidence/RSPACK_D6_COMMENT_PAIR_TRACE.md) describes the direct traces and the exact original-code replay. The [trace script](code/audit_rspack_65_comment_pairs.py) regenerates the records using current public GitHub comments.
+
+The trace uses public issue comments retrieved on November 22, 2026 UTC. The historical evidence snapshot and additional PR evidence channels remain separate audit targets.
