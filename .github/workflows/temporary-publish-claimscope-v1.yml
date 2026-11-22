@@ -1,0 +1,59 @@
+name: ONE TIME - Publish verified ClaimScope v1.0.0 release
+on:
+  push:
+    branches:
+      - release/claimscope-v1-audit-20261122
+    paths:
+      - '.github/workflows/temporary-publish-claimscope-v1.yml'
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 2c59f61826b800569a01fb798320c431db1ff71c
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify exact frozen main-branch commit and complete offline replay
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = '2c59f61826b800569a01fb798320c431db1ff71c'
+          bash run_checks.sh
+          DEEP=1 bash run_checks.sh
+      - name: Publish GitHub release for Zenodo ingestion
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if gh release view v1.0.0 -R risu-research/claimscope >/dev/null 2>&1; then
+            echo "Refusing to replace an existing immutable release" >&2
+            exit 1
+          fi
+          cat > /tmp/release-notes.md <<'EOF'
+          First archived release of the ClaimScope research-software artifact.
+
+          - Frozen 1,699-PR source-study D6 label export and repository-sensitivity code.
+          - Complete source-linked 97-PR semantic size-report audit and 476-comment public timing ledger.
+          - Exactly 72 reproducible cross-comment matching witnesses from 65 Rspack PRs, now verified entirely offline with the pinned original extractor.
+          - Reproduction, tamper tests, source SHA checks, publication preflight, source rights and citation metadata.
+
+          Reproduce from the released source archive using `bash run_checks.sh` and `DEEP=1 bash run_checks.sh`. Python 3.10+ and Bash are sufficient. No private credentials, model inference or online source re-collection are needed for the frozen studies.
+
+          Scope: observed public 2026-11-22 GitHub records are distinct from the original authors' restricted August 2026 full evidence snapshot. The controlled 65-flag scenario measures the original detector's boundary sensitivity, not the true prevalence of size reporting or a PR's performance effect.
+
+          Original public dataset/extractor: PurdueDualityLab/EMSE-perf-pr-study. Public Rspack reports: web-infra-dev/rspack. Their attribution and separate rights are described in THIRD_PARTY_NOTICES.md.
+          EOF
+          gh release create v1.0.0 -R risu-research/claimscope --target '2c59f61826b800569a01fb798320c431db1ff71c' --title 'ClaimScope v1.0.0 - Reproducible source evidence archive' --notes-file /tmp/release-notes.md --latest
+      - name: Confirm release tag matches audited source commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          tag_sha="$(gh api repos/risu-research/claimscope/git/ref/tags/v1.0.0 --jq .object.sha)"
+          test "$tag_sha" = '2c59f61826b800569a01fb798320c431db1ff71c'
+          gh release view v1.0.0 -R risu-research/claimscope --json tagName,url,publishedAt
