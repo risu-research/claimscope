@@ -5,6 +5,7 @@ on:
       - audit/rspack97-frozen-semantic-20261122
     paths:
       - '.github/workflows/rspack97-semantic.yml'
+      - 'run_checks.sh'
       - 'code/rspack97_semantic_audit.py'
       - 'code/test_rspack97_semantic.py'
       - 'evidence/rspack97_semantic_addendum_32.csv'
