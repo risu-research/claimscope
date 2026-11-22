@@ -4,6 +4,7 @@ on:
     paths:
       - '.github/workflows/rspack-11-exact-audit.yml'
       - 'code/audit_rspack_11_exact.py'
+      - 'code/diagnose_rspack_11_rules.py'
   workflow_dispatch:
 permissions:
   contents: read
@@ -20,9 +21,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python code/audit_rspack_11_exact.py
+      - name: Diagnose original rule behavior under controlled edits
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python code/diagnose_rspack_11_rules.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: rspack-11-original-extractor-replay
-          path: results/rspack_11_exact_extractor.json
+          path: |
+            results/rspack_11_exact_extractor.json
+            results/rspack_11_rule_diagnostics.json
           retention-days: 30
