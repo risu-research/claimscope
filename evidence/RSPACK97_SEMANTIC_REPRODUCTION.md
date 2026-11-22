@@ -26,7 +26,7 @@ The optional token is an ordinary GitHub API token used for rate limiting; it is
 
 ## Source evidence, with narrow retention
 
-The frozen `evidence/rspack97_semantic_public_snapshot.json` contains PR IDs and current commit lists, source timestamps and digests, and **public bot issue-comment text** limited to qualifying size reports. For three PRs with no qualifying report, it includes all bot-comment bodies to permit offline verification of absence within that channel. Ordinary human issue-comment bodies, local paths, private author records, credentials, personal contact data and any private original-study snapshots are excluded. The current GitHub public records are the sole source of the retained comments.
+The frozen `evidence/rspack97_semantic_public_snapshot.json` contains PR IDs and current commit lists, source timestamps and digests, and **public bot issue-comment text** limited to one qualifying size report per positive PR. Metadata and hashes are kept for the other bot comments. For three PRs with no qualifying report, it includes all bot-comment bodies to permit offline verification of absence within that channel. Ordinary human issue-comment bodies, local paths, private author records, credentials, personal contact data and any private original-study snapshots are excluded. The current GitHub public records are the sole source of the retained comments.
 
 All 94 report-positive cases contain a structured `Binary Size-limit` bot comment with a measured byte-based size. A concrete observed size (including an unchanged measurement) qualifies; a threshold, a memory measurement, a percentage without a size metric, or an anticipated improvement does not. The reporting decision is independent of the upstream D6 extractor.
 
@@ -54,5 +54,7 @@ The separate 65-case comment-boundary experiment yields 65 detector-sensitive de
 - Full PR-level results and hashes: `results/rspack97_semantic_size_audit.*`
 
 The August 2026 input snapshot used by the original authors is restricted. This audit uses publicly accessible GitHub evidence retrieved in November 2026 and freezes those observed source contents. The 97 PRs belong to one influential repository and were identified from the source study's published sample. The audit is a deterministic, inspectable source rubric; it is not blinded, external adjudication or build reproduction.
+
+The GitHub Actions workflow **Verify frozen Rspack 97 semantic evidence** runs the offline reproduction with read-only repository permission on pushes and pull requests. To collect a new public observation through GitHub Actions, use **Run workflow** with **refresh_public_sources** selected. The new observation is uploaded as a workflow artifact and never overwrites the frozen files. The local `--collect` mode performs the same public API collection.
 
 Re-running `--offline` needs no API, external package, or credential. Re-running `--collect` can generate a later GitHub snapshot, which should be treated as a new dated observation.
