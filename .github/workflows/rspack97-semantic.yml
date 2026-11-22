@@ -1,7 +1,8 @@
-name: Freeze and replay public Rspack 97 semantic evidence
+name: Verify frozen Rspack 97 semantic evidence
 on:
   push:
     branches:
+      - main
       - audit/rspack97-frozen-semantic-20261122
     paths:
       - '.github/workflows/rspack97-semantic.yml'
@@ -9,32 +10,39 @@ on:
       - 'code/rspack97_semantic_audit.py'
       - 'code/test_rspack97_semantic.py'
       - 'evidence/rspack97_semantic_addendum_32.csv'
+      - 'evidence/rspack97_semantic_public_snapshot.json'
+      - 'results/rspack97_semantic_size_audit.json'
+      - 'results/rspack97_semantic_size_audit.csv'
+      - 'results/rspack97_semantic_manifest.json'
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
+    inputs:
+      refresh_public_sources:
+        description: 'Collect a new public GitHub observation (does not overwrite the committed baseline)'
+        type: boolean
+        required: false
+        default: false
+permissions:
+  contents: read
 concurrency:
   group: rspack97-${{ github.ref }}
   cancel-in-progress: true
-permissions:
-  contents: write
 jobs:
-  frozen-public-audit:
+  verify:
     runs-on: ubuntu-latest
     timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Verify preexisting public analysis
+      - name: Verify frozen source data and all quantitative analyses
         run: bash run_checks.sh
-      - name: Test 97-case frozen inputs and semantic parser
+      - name: Verify 97-case parser and provenance invariants
         run: python -m unittest discover -s code -p 'test_rspack97_semantic.py' -v
-      - name: Collect 97 public GitHub PR discussions
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python code/rspack97_semantic_audit.py --collect
-      - name: Check deterministic offline replay
+      - name: Confirm byte-identical offline replay
         shell: bash
         run: |
           set -euo pipefail
@@ -42,23 +50,20 @@ jobs:
           python code/rspack97_semantic_audit.py --offline
           sha256sum evidence/rspack97_semantic_public_snapshot.json results/rspack97_semantic_size_audit.json results/rspack97_semantic_size_audit.csv results/rspack97_semantic_manifest.json > after.sha256
           diff -u before.sha256 after.sha256
-          python -m unittest discover -s code -p 'test_rspack97_semantic.py' -v
-      - name: Publication safety scan
-        shell: bash
+      - name: Inspect retained source text before publishing
         run: |
           python - <<'PY'
           import json,re
           from pathlib import Path
-          path=Path('evidence/rspack97_semantic_public_snapshot.json')
-          snap=json.loads(path.read_text(encoding='utf8'))
-          texts=[]
+          snap=json.loads(Path('evidence/rspack97_semantic_public_snapshot.json').read_text(encoding='utf8'))
+          assert len(snap['prs'])==97
+          bodies=[]
           for row in snap['prs']:
-              texts.extend(x['body'] for x in row['eligible_reports'])
-              texts.extend(x['body'] for x in row['negative_bot_bodies'])
+              bodies.extend(x['body'] for x in row['eligible_reports'])
+              bodies.extend(x['body'] for x in row['negative_bot_bodies'])
               assert all('body' not in x for x in row['other_bot_comment_metadata'])
-              assert row['pr_number'] > 0 and len(row['pr_head_sha'])==40
-          joined='\n'.join(texts)
-          patterns = (
+          joined='\n'.join(bodies)
+          patterns=(
               r'(?i)github_pat_[A-Za-z0-9_]{15,}',
               r'(?i)gh[pousr]_[A-Za-z0-9]{20,}',
               r'(?i)sk-[A-Za-z0-9]{16,}',
@@ -66,33 +71,31 @@ jobs:
               r'(?i)[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}',
               r'(?i)(?:C:\\Users\\|/home/[^/\s]+/)',
           )
-          for p in patterns:
-              if re.search(p,joined):
-                  raise SystemExit('Public-source body failed privacy and credentials scan')
-          assert len(snap['prs'])==97
-          print('PASS public bot evidence only, credential and contact patterns absent')
+          assert not any(re.search(pattern,joined) for pattern in patterns)
+          print('PASS: minimal public bot text, no detected credentials or contact details')
           PY
-      - name: Commit frozen public evidence on audit branch only
-        if: ${{ github.ref_name == 'audit/rspack97-frozen-semantic-20261122' }}
-        shell: bash
+      - name: Optional fresh public-source audit; never overwrites frozen evidence
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.refresh_public_sources }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add evidence/rspack97_semantic_public_snapshot.json results/rspack97_semantic_size_audit.json results/rspack97_semantic_size_audit.csv results/rspack97_semantic_manifest.json
-          if ! git diff --cached --quiet; then
-            git commit -m "Freeze reproducible 97-PR public semantic evidence"
-            git fetch origin audit/rspack97-frozen-semantic-20261122
-            git rebase origin/audit/rspack97-frozen-semantic-20261122
-            git push origin HEAD:audit/rspack97-frozen-semantic-20261122
-          fi
+          mkdir -p build
+          python code/rspack97_semantic_audit.py --collect \
+            --snapshot build/live_rspack97_snapshot.json \
+            --json build/live_rspack97_results.json \
+            --csv build/live_rspack97_results.csv \
+            --manifest build/live_rspack97_manifest.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: rspack97-public-semantic-audit
+          name: rspack97-verified-reproduction
           path: |
-            evidence/rspack97_semantic_public_snapshot.json
             results/rspack97_semantic_size_audit.json
             results/rspack97_semantic_size_audit.csv
             results/rspack97_semantic_manifest.json
+            build/live_rspack97_snapshot.json
+            build/live_rspack97_results.json
+            build/live_rspack97_results.csv
+            build/live_rspack97_manifest.json
+          if-no-files-found: warn
           retention-days: 60
