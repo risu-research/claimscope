@@ -18,6 +18,7 @@ fi
 "$PYTHON" "$ROOT/code/rspack97_semantic_audit.py" --offline
 "$PYTHON" "$ROOT/code/audit_rspack97_temporal.py" --offline
 "$PYTHON" "$ROOT/code/replay_rspack65_boundary_witnesses.py" --offline
+"$PYTHON" "$ROOT/code/preflight_release.py"
 if [[ "${DEEP:-0}" == "1" ]]; then
   "$PYTHON" "$ROOT/code/stage8_audit.py" --csv "$INPUT" --output "$OUT/stage8_audit.json" > "$OUT/stage8_stdout.json"
   "$PYTHON" "$ROOT/code/all_metric_repo_influence.py" --csv "$INPUT" --output "$OUT/all_metric_repo_influence.csv"
