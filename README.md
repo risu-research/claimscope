@@ -13,7 +13,7 @@ bash run_checks.sh
 DEEP=1 bash run_checks.sh
 ```
 
-The first command checks the source hash, replays the D6 counts, runs 39 tests, and regenerates the Stage 5 and Stage 6 results. The second command adds the ten-metric repository influence scan and Stage 8 decomposition with fixed-seed repository resampling. Generated files appear in `build/`.
+The first command checks the source hash, replays D6 counts, runs the offline integrity tests, and regenerates Stage 5, Stage 6, and Rspack boundary-sensitivity results. The second command adds the ten-metric repository influence scan and Stage 8 decomposition with fixed-seed repository resampling. Generated files appear in `build/`.
 
 The repository includes the pinned `data/rq3_labels.csv` for offline execution. To obtain the source directly from the original project:
 
@@ -43,7 +43,8 @@ python3 code/replay_public.py --download --cache data/rq3_labels.csv --output bu
 - `code/stage8_audit.py`: two-stratum decomposition, ten dimensions, repository resampling
 - `code/all_metric_repo_influence.py`: 440 repositories × 10 metric flags
 - `code/test_stage*.py`: 39 analysis-contract tests
-- `results/`: frozen baseline JSON outputs
+- `code/sensitivity_rspack65.py`: 65-record source-boundary sensitivity across all 1,699 analytic PRs
+- `results/`: frozen baseline and boundary-sensitivity outputs
 - `evidence/`: source inventory, original-rule replay, and comment-boundary audit
 
 ## Scope
@@ -85,3 +86,18 @@ The 65 Rspack PRs with boundary-dependent D6 labels contain 72 matched cue/quant
 The [65-PR pair ledger](results/rspack_65_comment_pairs.csv) records the source GitHub comment IDs, URLs, bot accounts, timestamps, matched expressions, and upstream rule IDs. The [source-level audit](evidence/RSPACK_D6_COMMENT_PAIR_TRACE.md) describes the direct traces and the exact original-code replay. The [trace script](code/audit_rspack_65_comment_pairs.py) regenerates the records using current public GitHub comments.
 
 The trace uses public issue comments retrieved on November 22, 2026 UTC. The historical evidence snapshot and additional PR evidence channels remain separate audit targets.
+
+## Full-cohort D6 boundary sensitivity
+
+The 65 source-linked Rspack PRs contain 60 `agentic` and five `human_candidate` observations. The published 1,699-PR D6 contrast is +8.885 percentage points. A controlled scenario setting those 65 D6 flags to false, with all other published labels and denominators fixed, produces +2.486 percentage points, a 72.016% attenuation.
+
+| Sensitivity operation | D6 contrast |
+| --- | ---: |
+| Published 1,699-PR cohort | +8.885 pp |
+| 65 Rspack boundary-dependent flags set to false | +2.486 pp |
+| 65 affected PRs excluded from the cohort | +2.945 pp |
+| Entire Rspack repository excluded | +1.339 pp |
+
+The [full-cohort report](evidence/RSPACK65_FULLCOHORT_SENSITIVITY.md) records the exact denominators, accounting decomposition, 12,000-draw paired repository resampling, and conditional retention range for independent D6 evidence channels. The [frozen sensitivity JSON](results/rspack_65_fullcohort_sensitivity.json) and [scenario table](results/rspack_65_fullcohort_scenarios.csv) can be regenerated with `code/sensitivity_rspack65.py` or `bash run_checks.sh`.
+
+The 65-flag intervention is a local sensitivity scenario. Full historical re-extraction additionally requires source-specific matches from the original collection snapshot.
