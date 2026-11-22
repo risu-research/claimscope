@@ -53,3 +53,13 @@ The included CSV supports exact recomputation of the released labels and reposit
 Source identity, hashes, field definitions, and attribution are recorded in [`SOURCE.md`](SOURCE.md).
 
 Artifact status: active research revision. Versioned archival release and DOI will follow the final experiments.
+
+## Rspack source inventory
+
+The [97-PR evidence ledger](evidence/rspack_97_source_inventory_20261122.csv) records GitHub creator accounts, issue/review comment counts, source URLs, and the source study's D6 labels. A `Binary Size-limit` bot comment appears in 94 PRs, including 83 D6-positive and 11 D6-negative records. The [inventory protocol](evidence/README.md) defines these counts and their observation window.
+
+```bash
+python3 code/rspack_source_inventory.py --max-prs 5
+```
+
+The full source-inventory collection uses public GitHub API endpoints and an optional `GITHUB_TOKEN` to increase the API request quota. The archived text-matching replay is the next research stage.
