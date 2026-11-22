@@ -1,0 +1,28 @@
+name: Audit D6 sources in Rspack positive controls
+on:
+  push:
+    paths:
+      - '.github/workflows/rspack-positive-controls.yml'
+      - 'code/audit_rspack_positive_controls.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  positive-controls:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check published positives using the exact D6 extractor
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python code/audit_rspack_positive_controls.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: rspack-positive-controls
+          path: results/rspack_positive_control_sources.json
+          retention-days: 30
