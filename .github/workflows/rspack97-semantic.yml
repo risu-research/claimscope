@@ -9,6 +9,16 @@ on:
       - 'run_checks.sh'
       - 'code/rspack97_semantic_audit.py'
       - 'code/test_rspack97_semantic.py'
+      - 'code/preflight_release.py'
+      - 'code/replay_rspack65_boundary_witnesses.py'
+      - 'code/test_rspack65_boundary_witnesses.py'
+      - 'code/upstream_pinned/**'
+      - 'evidence/rspack65_boundary_witnesses_20261122.json'
+      - 'CITATION.cff'
+      - '.zenodo.json'
+      - 'LICENSE'
+      - 'THIRD_PARTY_NOTICES.md'
+      - 'REPRODUCE_RELEASE.md'
       - 'code/audit_rspack97_temporal.py'
       - 'code/test_rspack97_temporal.py'
       - 'evidence/rspack97_semantic_addendum_32.csv'
@@ -62,6 +72,12 @@ jobs:
           python code/audit_rspack97_temporal.py --offline
           sha256sum evidence/rspack97_issue_comment_timestamps_20261122.csv results/rspack97_temporal_provenance_20261122.json > after_temporal.sha256
           diff -u before_temporal.sha256 after_temporal.sha256
+      - name: Reproduce all 72 original-rule cross-comment matches without network
+        run: |
+          python code/replay_rspack65_boundary_witnesses.py --offline
+          python -m unittest discover -s code -p 'test_rspack65_boundary_witnesses.py' -v
+      - name: Validate software release, third-party notices, citation metadata, and privacy
+        run: python code/preflight_release.py
       - name: Inspect retained source text before publishing
         run: |
           python - <<'PY'
