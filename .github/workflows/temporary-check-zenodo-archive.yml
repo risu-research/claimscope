@@ -1,0 +1,50 @@
+name: ONE TIME - Verify Zenodo v1.0.0 ZIP offline
+on:
+  push:
+    branches:
+      - release/claimscope-v1-audit-20261122
+    paths:
+      - '.github/workflows/temporary-check-zenodo-archive.yml'
+permissions:
+  contents: read
+jobs:
+  check-zenodo-archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: 2c59f61826b800569a01fb798320c431db1ff71c
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Download the actual immutable published Zenodo archive
+        run: |
+          set -euo pipefail
+          curl -fL --retry 3 --retry-delay 2 --max-time 180 \
+            'https://zenodo.org/api/records/24434117/files/risu-research/claimscope-v1.0.0.zip/content' \
+            -o /tmp/claimscope_zenodo_v1.zip
+          echo '412f6fc90c10db2012869005bc34e279  /tmp/claimscope_zenodo_v1.zip' | md5sum -c -
+          test "$(wc -c </tmp/claimscope_zenodo_v1.zip)" = '363469'
+          unzip -t /tmp/claimscope_zenodo_v1.zip | tail -n 2
+      - name: Unpack the Zenodo archive and run all offline checks
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/zenodo_replay
+          unzip -q /tmp/claimscope_zenodo_v1.zip -d /tmp/zenodo_replay
+          script="$(find /tmp/zenodo_replay -name run_checks.sh -type f -print -quit)"
+          test -n "$script"
+          cd "$(dirname "$script")"
+          test -f CITATION.cff
+          test -f .zenodo.json
+          test -f LICENSE
+          test -f THIRD_PARTY_NOTICES.md
+          test -f evidence/rspack65_boundary_witnesses_20261122.json
+          test -f code/upstream_pinned/metric_patterns.py
+          test -f code/upstream_pinned/extract_metrics.py
+          test ! -e .github/workflows/temporary-publish-claimscope-v1.yml
+          test ! -e .github/workflows/temporary-check-zenodo-archive.yml
+          bash run_checks.sh
+          DEEP=1 bash run_checks.sh
+          echo 'PASS: the exact Zenodo archived ZIP independently reproduces all published offline analyses'
