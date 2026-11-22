@@ -1,0 +1,3 @@
+repo,pr_number,published_D6,published_D6_nodiff,comment_author,comment_time_utc,comment_heading,reported_decrease_KB,comment_url,interpretation
+web-infra-dev/rspack,13010,True,True,github-actions[bot],2026-02-09T14:07:04Z,Binary Size-limit,48.00,https://github.com/web-infra-dev/rspack/pull/13010#issuecomment-3871932287,Selected public case only; original matched span unavailable
+web-infra-dev/rspack,13714,False,False,github-actions[bot],2026-04-15T08:50:45Z,Binary Size-limit,766.47,https://github.com/web-infra-dev/rspack/pull/13714#issuecomment-4250589596,Selected public case only; original matched span unavailable
