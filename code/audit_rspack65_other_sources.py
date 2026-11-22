@@ -232,7 +232,7 @@ def make_summary(rows:list[dict]):
 
 def write_outputs(rows:list[dict],summary:dict,out:Path,csvout:Path):
     out.parent.mkdir(parents=True,exist_ok=True)
-    out.write_text(json.dumps({'summary':summary,'rows':rows},indent=2,sort_keys=True,ensure_ascii=False)+'\n',encoding='utf8')
+    out.write_text(json.dumps({'summary':summary,'rows':rows},sort_keys=True,separators=(',',':'),ensure_ascii=False)+'\n',encoding='utf8')
     fields=['pr_number','sample_arm','published_D6','retained_issue_comments_atomic_plus_joined_nonissue',
        'retained_all_records_atomic','description','review_comments','commit_messages','ci_metadata','code_diff',
        'review_body_supplement','issue_comments_atomic','issue_comments_nonbot_atomic','patches_unavailable','ci_workflow_runs',

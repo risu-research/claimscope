@@ -101,3 +101,17 @@ The 65 source-linked Rspack PRs contain 60 `agentic` and five `human_candidate` 
 The [full-cohort report](evidence/RSPACK65_FULLCOHORT_SENSITIVITY.md) records the exact denominators, accounting decomposition, 12,000-draw paired repository resampling, and conditional retention range for independent D6 evidence channels. The [frozen sensitivity JSON](results/rspack_65_fullcohort_sensitivity.json) and [scenario table](results/rspack_65_fullcohort_scenarios.csv) can be regenerated with `code/sensitivity_rspack65.py` or `bash run_checks.sh`.
 
 The 65-flag intervention is a local sensitivity scenario. Full historical re-extraction additionally requires source-specific matches from the original collection snapshot.
+
+## Rspack 65: other evidence channels
+
+The original pinned D6 extractor was replayed against current public GitHub evidence for the 65 boundary-dependent Rspack PRs. Individual issue comments, PR descriptions, inline reviews, commit messages, workflow-run names, and code patches yielded **zero retained D6 detections**. The run checked 318 issue comments, 99 inline reviews, 236 commits, 439 workflow runs, and 389 available patches.
+
+With issue-comment boundaries preserved, the observed 65-case replay produces the same +2.486 percentage-point local scenario across the original 1,699 PRs. The original 1,634 other labels remain fixed. The [source-retention audit](evidence/RSPACK65_OTHER_SOURCE_RETENTION.md) records the method and historical-snapshot scope.
+
+- [65-PR source-by-source evidence table](results/rspack65_other_source_replay.csv)
+- [65-PR source evidence and provenance](results/rspack65_other_source_replay.json)
+- [1,699-PR recalculation](results/rspack65_observed_channel_sensitivity.json)
+- [Public API source replay](code/audit_rspack65_other_sources.py)
+- [Offline full-cohort integration](code/sensitivity_rspack65_observed_channels.py)
+
+The comparison is a controlled re-extraction using current public GitHub records. The original August 2026 evidence snapshot remains a separate archival verification target.
