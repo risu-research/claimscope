@@ -1,0 +1,31 @@
+name: Verify independent D6 sources for 65 Rspack PRs
+on:
+  push:
+    paths:
+      - '.github/workflows/rspack65-other-sources.yml'
+      - 'code/audit_rspack65_other_sources.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify all 65 PR evidence channels with pinned original extractor
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python code/audit_rspack65_other_sources.py --max-workers 5
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: rspack65-independent-D6-sources
+          path: |
+            results/rspack65_other_source_replay.json
+            results/rspack65_other_source_replay.csv
+            results/rspack65_other_source_errors.json
+          retention-days: 30
