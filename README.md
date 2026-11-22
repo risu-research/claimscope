@@ -171,8 +171,6 @@ Live collection uses a GitHub API token only if provided through the environment
 
 **Published release (November 22, 2026):** [ClaimScope v1.0.0 on Zenodo](https://doi.org/10.5281/zenodo.24434117). Version-specific DOI: `10.5281/zenodo.24434117`; all-versions DOI: `10.5281/zenodo.24434116`. The archived GitHub source revision is `2c59f61826b800569a01fb798320c431db1ff71c`. Its archived ZIP was published directly by the Zenodo/GitHub integration.
 
-Archival reproduction and software citation
-
 The publication-ready release includes a [full offline reproduction guide](REPRODUCE_RELEASE.md),
 a [minimal 72-match boundary witness corpus](evidence/rspack65_boundary_witnesses_20261122.json),
 and byte-identical, MIT-licensed [original source detector files](code/upstream_pinned/).
