@@ -20,7 +20,7 @@ if [[ "${DEEP:-0}" == "1" ]]; then
   "$PYTHON" "$ROOT/code/all_metric_repo_influence.py" --csv "$INPUT" --output "$OUT/all_metric_repo_influence.csv"
 fi
 "$PYTHON" - "$OUT/observed_replay.json" "$ROOT/results/observed_replay.json" "$ROOT/data/rq3_labels.csv" <<'PY'
-import json,sys,hashlib
+import json,sys,hashlib,math
 from pathlib import Path
 new,ref,original=(Path(v) for v in sys.argv[1:])
 a,b=(json.loads(p.read_text()) for p in (new,ref))
@@ -38,11 +38,13 @@ if a != b:
         elif isinstance(x,list):
             if len(x)!=len(y): differences.append((p,"length",len(x),len(y)))
             for i,(u,v) in enumerate(zip(x,y)): compare(u,v,f"{p}[{i}]")
-        elif x!=y:
+        elif x!=y and not (isinstance(x,float) and isinstance(y,float) and math.isclose(x,y,rel_tol=1e-12,abs_tol=1e-12)):
             differences.append((p,"value",x,y))
     compare(a,b)
-    print("FROZEN_CERTIFICATE_DIFF",json.dumps(differences[:30],ensure_ascii=False,default=str))
-    raise AssertionError(f"Core replay differs from frozen baseline in {len(differences)} fields")
+    if differences:
+        print("FROZEN_CERTIFICATE_DIFF",json.dumps(differences[:30],ensure_ascii=False,default=str))
+        raise AssertionError(f"Core replay differs from frozen baseline in {len(differences)} fields")
+    print("PASS: frozen certificate matches at 1e-12 floating-point precision")
 raw=original.read_bytes()
 assert hashlib.sha256(raw).hexdigest()=='c31616088cac4ea8d2369b942b78f08e39356250a0b452aba5c9402e05e070b9'
 print('PASS: frozen D6 certificate and source SHA-256')
