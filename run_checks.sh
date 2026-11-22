@@ -26,7 +26,23 @@ new,ref,original=(Path(v) for v in sys.argv[1:])
 a,b=(json.loads(p.read_text()) for p in (new,ref))
 # Path-dependent replay_source.file differs across installations.
 for d in (a,b): d['replay_source'].pop('file',None)
-assert a==b, 'Core replay differs from the frozen baseline'
+if a != b:
+    differences=[]
+    def compare(x,y,p="root"):
+        if type(x)!=type(y):
+            differences.append((p,"type",type(x).__name__,type(y).__name__))
+        elif isinstance(x,dict):
+            for k in sorted(set(x)|set(y)):
+                if k not in x or k not in y: differences.append((f"{p}.{k}","missing",str(k in x),str(k in y)))
+                else: compare(x[k],y[k],f"{p}.{k}")
+        elif isinstance(x,list):
+            if len(x)!=len(y): differences.append((p,"length",len(x),len(y)))
+            for i,(u,v) in enumerate(zip(x,y)): compare(u,v,f"{p}[{i}]")
+        elif x!=y:
+            differences.append((p,"value",x,y))
+    compare(a,b)
+    print("FROZEN_CERTIFICATE_DIFF",json.dumps(differences[:30],ensure_ascii=False,default=str))
+    raise AssertionError(f"Core replay differs from frozen baseline in {len(differences)} fields")
 raw=original.read_bytes()
 assert hashlib.sha256(raw).hexdigest()=='c31616088cac4ea8d2369b942b78f08e39356250a0b452aba5c9402e05e070b9'
 print('PASS: frozen D6 certificate and source SHA-256')
