@@ -121,3 +121,21 @@ The comparison is a controlled re-extraction using current public GitHub records
 A separate, source-based audit tested whether each Rspack PR contains a concrete observed artifact-size measurement. **All 65 contain a `Binary Size-limit` report tied to the current PR head:** 37 report increases, 23 decreases, and five unchanged sizes. All 65 also contain Rsdoctor project-size tables. The audit rule checks numeric byte-based observations and source revisions, independently of the upstream D6 regex.
 
 This is a critical distinction for interpreting the earlier +2.486 pp boundary-preserving scenario: that number measures **D6 extractor sensitivity**, whereas the 65 PRs have genuine reported size measurements in their public discussion threads. [Decision rule and interpretation](evidence/RSPACK65_SEMANTIC_SIZE_PRESENCE.md), [65-row source ledger](results/rspack65_semantic_size_audit.csv), and [replay code](code/semantic_rspack65_size.py) document the audit. The original historical private snapshot remains a separate replication target.
+
+## Complete Rspack 97-PR semantic size-report audit
+
+The frozen source-based audit covers **all 97 Rspack PRs**, beyond the 65 boundary-dependent positive cases. A structured byte-based size measurement appears in **94/97** inspected public PR discussions, including **83/83** published D6-positive PRs and **11/14** published D6-negative PRs. Three discussions lack a qualifying automated size report in the inspected channel.
+
+Of the 94 qualifying reports, 91 refer to the current PR head, two to earlier PR-listed commits, and one to a source commit that could not be verified against the current PR commit list. These are measurements reported in public discussion threads; their presence is separate from D6 extraction and from the causal effects of a PR.
+
+The frozen audit keeps one qualifying public bot report per positive PR, all bot-comment evidence for the three negative PRs, and minimal identity/digest metadata for other bot comments. No human discussion bodies or private source snapshots are retained.
+
+Reproduce the full quantitative analysis and 97-PR semantic audit offline with:
+
+    bash run_checks.sh
+
+Or replay just the 97-PR evidence without a network connection:
+
+    python3 code/rspack97_semantic_audit.py --offline
+
+See the [97-PR reproduction protocol](evidence/RSPACK97_SEMANTIC_REPRODUCTION.md), [per-PR evidence table](results/rspack97_semantic_size_audit.csv), [source snapshot](evidence/rspack97_semantic_public_snapshot.json), [integrity manifest](results/rspack97_semantic_manifest.json), and [source-audit code](code/rspack97_semantic_audit.py). Regenerating the dated source collection requires public GitHub API access, which is a separate mode of execution.
