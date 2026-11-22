@@ -9,11 +9,15 @@ on:
       - 'run_checks.sh'
       - 'code/rspack97_semantic_audit.py'
       - 'code/test_rspack97_semantic.py'
+      - 'code/audit_rspack97_temporal.py'
+      - 'code/test_rspack97_temporal.py'
       - 'evidence/rspack97_semantic_addendum_32.csv'
       - 'evidence/rspack97_semantic_public_snapshot.json'
       - 'results/rspack97_semantic_size_audit.json'
       - 'results/rspack97_semantic_size_audit.csv'
       - 'results/rspack97_semantic_manifest.json'
+      - 'evidence/rspack97_issue_comment_timestamps_20261122.csv'
+      - 'results/rspack97_temporal_provenance_20261122.json'
   pull_request:
     branches:
       - main
@@ -50,6 +54,14 @@ jobs:
           python code/rspack97_semantic_audit.py --offline
           sha256sum evidence/rspack97_semantic_public_snapshot.json results/rspack97_semantic_size_audit.json results/rspack97_semantic_size_audit.csv results/rspack97_semantic_manifest.json > after.sha256
           diff -u before.sha256 after.sha256
+      - name: Independently confirm frozen comment timestamps
+        shell: bash
+        run: |
+          set -euo pipefail
+          sha256sum evidence/rspack97_issue_comment_timestamps_20261122.csv results/rspack97_temporal_provenance_20261122.json > before_temporal.sha256
+          python code/audit_rspack97_temporal.py --offline
+          sha256sum evidence/rspack97_issue_comment_timestamps_20261122.csv results/rspack97_temporal_provenance_20261122.json > after_temporal.sha256
+          diff -u before_temporal.sha256 after_temporal.sha256
       - name: Inspect retained source text before publishing
         run: |
           python - <<'PY'
@@ -85,6 +97,7 @@ jobs:
             --json build/live_rspack97_results.json \
             --csv build/live_rspack97_results.csv \
             --manifest build/live_rspack97_manifest.json
+          python code/audit_rspack97_temporal.py --collect --ledger build/live_temporal_comments.csv --summary build/live_temporal_summary.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -93,9 +106,12 @@ jobs:
             results/rspack97_semantic_size_audit.json
             results/rspack97_semantic_size_audit.csv
             results/rspack97_semantic_manifest.json
+            results/rspack97_temporal_provenance_20261122.json
             build/live_rspack97_snapshot.json
             build/live_rspack97_results.json
             build/live_rspack97_results.csv
             build/live_rspack97_manifest.json
+            build/live_temporal_comments.csv
+            build/live_temporal_summary.json
           if-no-files-found: warn
           retention-days: 60
