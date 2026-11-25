@@ -223,3 +223,5 @@ def main():
 if __name__=="__main__":
     from r02c3b9_collect import main as replay_main
     replay_main()
+
+# C3b9 collection: three-row cardinality guard corrected.
