@@ -221,5 +221,5 @@ def main():
     print("WROTE "+str(args.out),flush=True)
 
 if __name__=="__main__":
-    from r02b1_negative_census import main as replay_main
+    from r02b1_normalizer_diagnostics import main as replay_main
     replay_main()
