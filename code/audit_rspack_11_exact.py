@@ -221,5 +221,5 @@ def main():
     print("WROTE "+str(args.out),flush=True)
 
 if __name__=="__main__":
-    from r01b2_patch_semantics import main as replay_main
+    from r01b3_source_ablation import main as replay_main
     replay_main()
