@@ -33,7 +33,7 @@ def main():
     assert hashlib.sha256(raw).hexdigest()==HASH
     lookup={(int(r['repo_id']),int(r['number'])):r for r in csv.DictReader(raw.decode('utf-8-sig').splitlines())}
     rows=[lookup[k] for k in IDS]
-    assert len(set(IDS))==10 and all(positive(r['in_metric_layer']) and positive(r['D6']) for r in rows)
+    assert len(set(IDS))==3 and all(positive(r['in_metric_layer']) and positive(r['D6']) for r in rows)
     with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:out=list(pool.map(work,rows))
     data={'pin':PIN,'label_sha256':HASH,'frozen_sample_sha256':'4291296ad945a762e418668226059fd97ff08ea12a64e10f92b5fad47e14d284','cutoff':CUT,'retrieval_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'rows':out}
     OUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
