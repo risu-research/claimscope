@@ -221,4 +221,5 @@ def main():
     print("WROTE "+str(args.out),flush=True)
 
 if __name__=="__main__":
-    main()
+    from r01b1_six_channel_replay import main as replay_main
+    replay_main()
