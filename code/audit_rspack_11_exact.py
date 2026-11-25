@@ -225,3 +225,5 @@ if __name__=="__main__":
     replay_main()
 
 # C3b9 collection: three-row cardinality guard corrected.
+
+# C3b9 final three-row replay cardinality.

@@ -13,7 +13,7 @@ def main():
     assert hashlib.sha256(raw).hexdigest()==HASH
     lookup={(int(r['repo_id']),int(r['number'])):r for r in csv.DictReader(raw.decode('utf-8-sig').splitlines())}
     rows=[lookup[k] for k in IDS]
-    assert len(rows)==10 and all(positive(r['D6']) and positive(r['in_metric_layer']) for r in rows)
+    assert len(rows)==3 and all(positive(r['D6']) and positive(r['in_metric_layer']) for r in rows)
     def work(r):
         z=one(r)
         z['published_D6']=positive(r['D6'])
