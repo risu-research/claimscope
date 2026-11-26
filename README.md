@@ -1,6 +1,6 @@
 # ClaimScope
 
-Version 2.0.0.
+Version 2.0.0. Archived release: [10.5281/zenodo.24547363](https://doi.org/10.5281/zenodo.24547363) (November 26, 2026 UTC). The [tagged source](https://github.com/risu-research/claimscope/tree/v2.0.0) identifies the 64 files verified against the Zenodo archive.
 
 A reproducible repository-level reanalysis of artifact-size reporting in agentic pull requests. The study uses the 1,699 PRs in the metric layer of the public label export accompanying Peng et al. ([arXiv:2610.03969v1](https://arxiv.org/abs/2610.03969v1)). It compares the published D6 flags, replays the original detector on public issue comments, and estimates reporting rates from 823 PRs inspected under two measurement definitions.
 

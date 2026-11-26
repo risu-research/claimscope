@@ -9,6 +9,8 @@ authors:
 repository-code: https://github.com/risu-research/claimscope
 url: https://github.com/risu-research/claimscope
 version: 2.0.0
+date-released: 2026-11-26
+doi: 10.5281/zenodo.24547363
 license: MIT
 keywords:
   - coding agents
