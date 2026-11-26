@@ -2,7 +2,7 @@ name: Verify and publish ClaimScope 2.0.0
 on:
   push:
     branches: [release-v2-transfer]
-    paths: [ClaimScope_2.0.0_release.zip]
+    paths: [ClaimScope_2.0.0_release.zip, .github/workflows/publish-v2.yml]
 permissions:
   contents: write
 concurrency:
@@ -11,7 +11,7 @@ concurrency:
 jobs:
   publish:
     if: github.repository == 'risu-research/claimscope'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     env:
       GH_TOKEN: ${{ github.token }}
@@ -63,7 +63,7 @@ jobs:
           parent="$(git rev-parse origin/main)"
           export GIT_INDEX_FILE="$RUNNER_TEMP/release.index"
           git read-tree --empty
-          git --git-dir="$GITHUB_WORKSPACE/.git" --work-tree="$src" -c core.autocrlf=false -c core.filemode=false add -f -A -- .
+          (cd "$src" && git --git-dir="$GITHUB_WORKSPACE/.git" --work-tree="$src" -c core.autocrlf=false -c core.filemode=false add -f -A -- .)
           tree="$(git write-tree)"
           unset GIT_INDEX_FILE
           test "$tree" = "$EXPECTED_TREE"
