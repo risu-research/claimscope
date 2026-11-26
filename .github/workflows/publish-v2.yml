@@ -45,9 +45,15 @@ jobs:
           assert json.loads((root/".zenodo.json").read_text())["version"] == "2.0.0"
           print("Verified 64 files and 63 manifest hashes")
           PY
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13.5'
       - name: Execute the offline reproduction
         shell: bash
-        run: python3 "$RUNNER_TEMP/release/claimscope-reproduction/reproduce.py" --output "$RUNNER_TEMP/reproduction"
+        run: |
+          set -euo pipefail
+          cp -a "$RUNNER_TEMP/release/claimscope-reproduction" "$RUNNER_TEMP/replay-copy"
+          python3 "$RUNNER_TEMP/replay-copy/reproduce.py" --output "$RUNNER_TEMP/reproduction"
       - name: Verify tree, preserve history, and publish
         shell: bash
         run: |
@@ -81,4 +87,6 @@ jobs:
           else
             gh release create v2.0.0 --repo "$GITHUB_REPOSITORY" --target "$commit" --title 'ClaimScope v2.0.0' --notes 'Reproduction archive for the ClaimScope camera-ready study: 1,699 published PR labels, 823 audited PRs, pinned detector replay, fixed sampling, exact finite-population inference, and source-linked review tools. Run python3 reproduce.py for offline verification.'
           fi
+          git fetch origin refs/tags/v2.0.0:refs/tags/v2.0.0
+          test "$(git rev-parse 'v2.0.0^{commit}')" = "$commit"
           echo "Published release commit: $commit"
