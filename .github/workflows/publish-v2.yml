@@ -1,0 +1,84 @@
+name: Verify and publish ClaimScope 2.0.0
+on:
+  push:
+    branches: [release-v2-transfer]
+    paths: [ClaimScope_2.0.0_release.zip]
+permissions:
+  contents: write
+concurrency:
+  group: claimscope-v2-release
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == 'risu-research/claimscope'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+      BASE: 4a20b2a071b586e1b6934f2140001fdc6b267d27
+      EXPECTED_TREE: cc386e39364571a083abfd0144e9039fd6b6c85b
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Verify the exact release archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo '1c3494e843bb5955fdb0bbbd2e3ec0495897e4d58a7cb546f52a67c01554d0b5  ClaimScope_2.0.0_release.zip' | sha256sum -c -
+          mkdir -p "$RUNNER_TEMP/release"
+          python3 - <<'PY'
+          import hashlib, json, os, pathlib, zipfile
+          out = pathlib.Path(os.environ["RUNNER_TEMP"]) / "release"
+          with zipfile.ZipFile("ClaimScope_2.0.0_release.zip") as z:
+              names = z.namelist()
+              assert len(names) == len(set(names)) == 64
+              assert all(n.startswith("claimscope-reproduction/") and ".." not in pathlib.PurePosixPath(n).parts for n in names)
+              z.extractall(out)
+          root = out / "claimscope-reproduction"
+          manifest = json.loads((root / "SHA256SUMS.json").read_text())
+          paths = {p.relative_to(root).as_posix() for p in root.rglob("*") if p.is_file()}
+          assert paths == set(manifest) | {"SHA256SUMS.json"}
+          assert len(manifest) == 63
+          for name, digest in manifest.items():
+              assert hashlib.sha256((root/name).read_bytes()).hexdigest() == digest, name
+          assert json.loads((root/".zenodo.json").read_text())["version"] == "2.0.0"
+          print("Verified 64 files and 63 manifest hashes")
+          PY
+      - name: Execute the offline reproduction
+        shell: bash
+        run: python3 "$RUNNER_TEMP/release/claimscope-reproduction/reproduce.py" --output "$RUNNER_TEMP/reproduction"
+      - name: Verify tree, preserve history, and publish
+        shell: bash
+        run: |
+          set -euo pipefail
+          src="$RUNNER_TEMP/release/claimscope-reproduction"
+          git fetch origin main --tags
+          parent="$(git rev-parse origin/main)"
+          export GIT_INDEX_FILE="$RUNNER_TEMP/release.index"
+          git read-tree --empty
+          git --git-dir="$GITHUB_WORKSPACE/.git" --work-tree="$src" -c core.autocrlf=false -c core.filemode=false add -f -A -- .
+          tree="$(git write-tree)"
+          unset GIT_INDEX_FILE
+          test "$tree" = "$EXPECTED_TREE"
+          echo "Verified Git tree: $tree"
+          if [ "$(git rev-parse "$parent^{tree}")" = "$tree" ]; then
+            commit="$parent"
+          else
+            test "$parent" = "$BASE"
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            commit="$(git commit-tree "$tree" -p "$parent" -m 'Release ClaimScope 2.0.0 reproduction archive')"
+            git push origin "$commit:refs/heads/main"
+          fi
+          test "$(git ls-remote origin refs/heads/main | cut -f1)" = "$commit"
+          if git show-ref --verify --quiet refs/tags/v2.0.0; then
+            test "$(git rev-parse 'v2.0.0^{commit}')" = "$commit"
+          fi
+          if gh release view v2.0.0 --repo "$GITHUB_REPOSITORY" --json isDraft,isPrerelease,url > "$RUNNER_TEMP/release-status.json"; then
+            python3 -c 'import json,sys; r=json.load(open(sys.argv[1])); assert not r["isDraft"] and not r["isPrerelease"]; print(r["url"])' "$RUNNER_TEMP/release-status.json"
+            test "$(git rev-parse 'v2.0.0^{commit}')" = "$commit"
+          else
+            gh release create v2.0.0 --repo "$GITHUB_REPOSITORY" --target "$commit" --title 'ClaimScope v2.0.0' --notes 'Reproduction archive for the ClaimScope camera-ready study: 1,699 published PR labels, 823 audited PRs, pinned detector replay, fixed sampling, exact finite-population inference, and source-linked review tools. Run python3 reproduce.py for offline verification.'
+          fi
+          echo "Published release commit: $commit"
