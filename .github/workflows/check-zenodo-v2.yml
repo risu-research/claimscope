@@ -1,0 +1,40 @@
+name: Verify Zenodo archive metadata
+on:
+  push:
+    branches: [release-v2-transfer]
+    paths: [.github/workflows/check-zenodo-v2.yml]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
+    steps:
+      - name: Query public Zenodo and DataCite records
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import urllib.request, urllib.parse, json
+          def get(url):
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent':'ClaimScope archive verification','Accept':'application/json'}), timeout=15) as f:
+                      return json.load(f)
+              except Exception as e:
+                  print(url, type(e).__name__, str(e))
+                  return {}
+          urls = [
+              'https://zenodo.org/api/records?'+urllib.parse.urlencode({'q':'conceptrecid:24434116','all_versions':'true','size':20}),
+              'https://zenodo.org/api/records?'+urllib.parse.urlencode({'q':'metadata.title:ClaimScope','all_versions':'true','size':20}),
+              'https://zenodo.org/api/records/24434117',
+          ]
+          for url in urls:
+              data=get(url)
+              hits=data.get('hits',{}).get('hits',[]) if 'hits' in data else ([data] if data.get('id') else [])
+              for r in hits:
+                  m=r.get('metadata',{})
+                  print(json.dumps({'id':r.get('id'),'doi':r.get('doi'),'conceptdoi':r.get('conceptdoi'),'version':m.get('version'),'title':m.get('title'),'publication_date':m.get('publication_date'),'creators':m.get('creators'),'related_identifiers':m.get('related_identifiers'),'files':[{'key':f.get('key'),'checksum':f.get('checksum'),'size':f.get('size')} for f in r.get('files',[])],'links':{k:v for k,v in r.get('links',{}).items() if k in ('html','doi','latest_html')}},ensure_ascii=True))
+          d=get('https://api.datacite.org/dois?'+urllib.parse.urlencode({'query':'titles.title:ClaimScope','page[size]':20}))
+          for x in d.get('data',[]):
+              a=x.get('attributes',{})
+              print(json.dumps({'datacite_doi':a.get('doi'),'version':a.get('version'),'titles':a.get('titles'),'url':a.get('url'),'relatedIdentifiers':a.get('relatedIdentifiers')},ensure_ascii=True))
+          PY
