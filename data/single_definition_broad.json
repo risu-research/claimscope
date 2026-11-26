@@ -1,0 +1,115 @@
+{
+  "cells": [
+    {
+      "arm": "agentic",
+      "stratum": "known_report_repo",
+      "N": 6,
+      "n": 6,
+      "k": 1,
+      "u": 0,
+      "weighted_lower": 1.0,
+      "weighted_upper": 1.0,
+      "simultaneous_lower_K": 1,
+      "simultaneous_upper_K": 1
+    },
+    {
+      "arm": "agentic",
+      "stratum": "no_published_positive_repo",
+      "N": 558,
+      "n": 200,
+      "k": 1,
+      "u": 3,
+      "weighted_lower": 2.79,
+      "weighted_upper": 11.16,
+      "simultaneous_lower_K": 1,
+      "simultaneous_upper_K": 29
+    },
+    {
+      "arm": "agentic",
+      "stratum": "other_positive_repo",
+      "N": 167,
+      "n": 120,
+      "k": 2,
+      "u": 2,
+      "weighted_lower": 2.783333333333333,
+      "weighted_upper": 5.566666666666666,
+      "simultaneous_lower_K": 2,
+      "simultaneous_upper_K": 11
+    },
+    {
+      "arm": "human_candidate",
+      "stratum": "known_report_repo",
+      "N": 10,
+      "n": 10,
+      "k": 5,
+      "u": 0,
+      "weighted_lower": 5.0,
+      "weighted_upper": 5.0,
+      "simultaneous_lower_K": 5,
+      "simultaneous_upper_K": 5
+    },
+    {
+      "arm": "human_candidate",
+      "stratum": "no_published_positive_repo",
+      "N": 615,
+      "n": 200,
+      "k": 3,
+      "u": 3,
+      "weighted_lower": 9.225,
+      "weighted_upper": 18.45,
+      "simultaneous_lower_K": 3,
+      "simultaneous_upper_K": 41
+    },
+    {
+      "arm": "human_candidate",
+      "stratum": "other_positive_repo",
+      "N": 176,
+      "n": 120,
+      "k": 30,
+      "u": 4,
+      "weighted_lower": 44.0,
+      "weighted_upper": 49.86666666666667,
+      "simultaneous_lower_K": 35,
+      "simultaneous_upper_K": 61
+    }
+  ],
+  "arms": {
+    "agentic": {
+      "negative_N": 731,
+      "original_metric_N": 858,
+      "weighted_lower": 6.573333333333333,
+      "weighted_upper": 17.726666666666667,
+      "simultaneous_lower_K": 4,
+      "simultaneous_upper_K": 41,
+      "negative_rate_range": [
+        0.008992248062015503,
+        0.02424988600091199
+      ],
+      "simultaneous_rate_range": [
+        0.005471956224350205,
+        0.0560875512995896
+      ]
+    },
+    "human_candidate": {
+      "negative_N": 801,
+      "original_metric_N": 841,
+      "weighted_lower": 58.225,
+      "weighted_upper": 73.31666666666666,
+      "simultaneous_lower_K": 43,
+      "simultaneous_upper_K": 107,
+      "negative_rate_range": [
+        0.07269038701622972,
+        0.09153141905950894
+      ],
+      "simultaneous_rate_range": [
+        0.05368289637952559,
+        0.13358302122347065
+      ]
+    }
+  },
+  "simultaneous_missed_report_contribution_gap_pp": [
+    -12.256748404191924,
+    -0.3344059824440325
+  ],
+  "warning": "Current-source observable report endpoint; not corrected overall reporting rates."
+}

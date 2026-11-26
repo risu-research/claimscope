@@ -1,0 +1,226 @@
+{
+  "label_sha256": "c31616088cac4ea8d2369b942b78f08e39356250a0b452aba5c9402e05e070b9",
+  "witness_sha256": "9db6c426638e5f071f02b0ba28011b2f8bd398527c24f5c7ec496a01bc500be9",
+  "seed": "e59882e02eee09c3575b4747969078a9f96bd24ad93e57f63b70addce5e89041",
+  "original_rows": 2081,
+  "metric_rows": 1699,
+  "excluded_metric_rows": 382,
+  "excluded_metric_D6_positive": 5,
+  "metric_repositories": 440,
+  "non_rspack_repositories": 439,
+  "negative_repositories": 432,
+  "positive_repositories": 42,
+  "positive_repositories_with_negatives": 35,
+  "selected_repositories": 243,
+  "known_report_repositories": 8,
+  "selected_total": 656,
+  "negative_total": 1532,
+  "strata": [
+    {
+      "arm": "agentic",
+      "stratum": "known_report_repo",
+      "N": 6,
+      "n": 6,
+      "repositories": 5,
+      "sample_repositories": 5,
+      "inclusion_probability": 1.0,
+      "weight": 1.0,
+      "zero_upper_K_95_one_sided": 0,
+      "zero_upper_rate_95_one_sided": 0.0,
+      "zero_upper_K_simultaneous_95": 0,
+      "zero_upper_rate_simultaneous_95": 0.0,
+      "prob_detect_at_least_one_if_1pct": 1,
+      "prob_detect_at_least_one_if_3pct": 1
+    },
+    {
+      "arm": "agentic",
+      "stratum": "other_positive_repo",
+      "N": 167,
+      "n": 120,
+      "repositories": 19,
+      "sample_repositories": 17,
+      "inclusion_probability": 0.718562874251497,
+      "weight": 1.3916666666666666,
+      "zero_upper_K_95_one_sided": 2,
+      "zero_upper_rate_95_one_sided": 0.011976047904191617,
+      "zero_upper_K_simultaneous_95": 3,
+      "zero_upper_rate_simultaneous_95": 0.017964071856287425,
+      "prob_detect_at_least_one_if_1pct": 0.9220113988889691,
+      "prob_detect_at_least_one_if_3pct": 0.9996097133866291
+    },
+    {
+      "arm": "agentic",
+      "stratum": "no_published_positive_repo",
+      "N": 558,
+      "n": 200,
+      "repositories": 234,
+      "sample_repositories": 121,
+      "inclusion_probability": 0.35842293906810035,
+      "weight": 2.79,
+      "zero_upper_K_95_one_sided": 6,
+      "zero_upper_rate_95_one_sided": 0.010752688172043012,
+      "zero_upper_K_simultaneous_95": 9,
+      "zero_upper_rate_simultaneous_95": 0.016129032258064516,
+      "prob_detect_at_least_one_if_1pct": 0.9313065234591977,
+      "prob_detect_at_least_one_if_3pct": 0.9995402088871017
+    },
+    {
+      "arm": "human_candidate",
+      "stratum": "known_report_repo",
+      "N": 10,
+      "n": 10,
+      "repositories": 3,
+      "sample_repositories": 3,
+      "inclusion_probability": 1.0,
+      "weight": 1.0,
+      "zero_upper_K_95_one_sided": 0,
+      "zero_upper_rate_95_one_sided": 0.0,
+      "zero_upper_K_simultaneous_95": 0,
+      "zero_upper_rate_simultaneous_95": 0.0,
+      "prob_detect_at_least_one_if_1pct": 1,
+      "prob_detect_at_least_one_if_3pct": 1
+    },
+    {
+      "arm": "human_candidate",
+      "stratum": "other_positive_repo",
+      "N": 176,
+      "n": 120,
+      "repositories": 17,
+      "sample_repositories": 15,
+      "inclusion_probability": 0.6818181818181818,
+      "weight": 1.4666666666666666,
+      "zero_upper_K_95_one_sided": 2,
+      "zero_upper_rate_95_one_sided": 0.011363636363636364,
+      "zero_upper_K_simultaneous_95": 3,
+      "zero_upper_rate_simultaneous_95": 0.017045454545454544,
+      "prob_detect_at_least_one_if_1pct": 0.9,
+      "prob_detect_at_least_one_if_3pct": 0.999142718917248
+    },
+    {
+      "arm": "human_candidate",
+      "stratum": "no_published_positive_repo",
+      "N": 615,
+      "n": 200,
+      "repositories": 233,
+      "sample_repositories": 116,
+      "inclusion_probability": 0.3252032520325203,
+      "weight": 3.075,
+      "zero_upper_K_95_one_sided": 7,
+      "zero_upper_rate_95_one_sided": 0.011382113821138212,
+      "zero_upper_K_simultaneous_95": 11,
+      "zero_upper_rate_simultaneous_95": 0.01788617886178862,
+      "prob_detect_at_least_one_if_1pct": 0.9373384734828603,
+      "prob_detect_at_least_one_if_3pct": 0.9995050049778931
+    }
+  ],
+  "arms": {
+    "agentic": {
+      "negative_N": 731,
+      "sample_n": 326,
+      "original_metric_N": 858,
+      "sample_repositories": 143,
+      "worst_case_design_se_total": 16.32799140773693,
+      "worst_case_design_se_rate": 0.02233651355367569,
+      "illustrative_normal_95_halfwidth_pp": 4.3779566565204355,
+      "zero_hits_joint_upper_K": 12,
+      "zero_hits_joint_upper_negative_rate": 0.016415868673050615,
+      "zero_hits_joint_upper_original_denominator_pp": 1.3986013986013985
+    },
+    "human_candidate": {
+      "negative_N": 801,
+      "sample_n": 330,
+      "original_metric_N": 841,
+      "sample_repositories": 134,
+      "worst_case_design_se_total": 18.444529450941996,
+      "worst_case_design_se_rate": 0.023026878215907612,
+      "illustrative_normal_95_halfwidth_pp": 4.513268130317892,
+      "zero_hits_joint_upper_K": 14,
+      "zero_hits_joint_upper_negative_rate": 0.017478152309612985,
+      "zero_hits_joint_upper_original_denominator_pp": 1.6646848989298455
+    }
+  },
+  "frame_sha256": "92a40c4d90ed6c8faf187c90c43261ee9c01a602c5ef860e05e9709a8df49a30",
+  "sample_sha256": "530fb02b8eca1a8ca5c2152080eb7e8b0b823d60d59cdbd1b4bcc34304c7abe6",
+  "largest_negative_repos": [
+    {
+      "repo": "oxc-project/oxc",
+      "negative": 78
+    },
+    {
+      "repo": "paradigmxyz/reth",
+      "negative": 75
+    },
+    {
+      "repo": "dotnet/runtime",
+      "negative": 71
+    },
+    {
+      "repo": "esphome/esphome",
+      "negative": 68
+    },
+    {
+      "repo": "mlflow/mlflow",
+      "negative": 38
+    },
+    {
+      "repo": "ggml-org/llama.cpp",
+      "negative": 32
+    },
+    {
+      "repo": "moonbitlang/core",
+      "negative": 20
+    },
+    {
+      "repo": "primer/react",
+      "negative": 20
+    },
+    {
+      "repo": "dotnet/msbuild",
+      "negative": 19
+    },
+    {
+      "repo": "ryokun6/ryos",
+      "negative": 19
+    },
+    {
+      "repo": "swc-project/swc",
+      "negative": 19
+    },
+    {
+      "repo": "NethermindEth/nethermind",
+      "negative": 18
+    },
+    {
+      "repo": "astral-sh/ruff",
+      "negative": 17
+    },
+    {
+      "repo": "JuliaLang/julia",
+      "negative": 16
+    },
+    {
+      "repo": "modular/modular",
+      "negative": 16
+    },
+    {
+      "repo": "PrefectHQ/prefect",
+      "negative": 15
+    },
+    {
+      "repo": "marin-community/marin",
+      "negative": 15
+    },
+    {
+      "repo": "commonwarexyz/monorepo",
+      "negative": 14
+    },
+    {
+      "repo": "dotnet/roslyn",
+      "negative": 14
+    },
+    {
+      "repo": "lambdaclass/ethrex",
+      "negative": 14
+    }
+  ]
+}

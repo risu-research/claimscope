@@ -1,0 +1,7 @@
+{
+  "commit": "64432e0b6ed7791bbfa929c6c183fc76c75b5d58",
+  "git_blob_sha1": {
+    "metric_patterns.py": "31aaf5eb77b97be24cb4be359d1a30c862c2293e",
+    "extract_metrics.py": "cf5b93ff071a39a0e4b2d8a4fdb85a2059b80a86"
+  }
+}

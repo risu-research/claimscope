@@ -1,7 +1,0 @@
-scenario,agentic_n,agentic_D6_yes,agentic_rate_pct,human_candidate_n,human_candidate_D6_yes,human_candidate_rate_pct,contrast_pp
-published,858,115,13.403263403,841,38,4.518430440,8.884832963
-disable_65_D6_flags,858,55,6.410256410,841,33,3.923900119,2.486356291
-exclude_65_PR_rows,798,55,6.892230576,836,33,3.947368421,2.944862155
-exclude_Rspack_repository,770,39,5.064935065,832,31,3.725961538,1.338973526
-Rspack_published,88,76,86.363636364,9,7,77.777777778,8.585858586
-Rspack_disable_65,88,16,18.181818182,9,2,22.222222222,-4.040404040

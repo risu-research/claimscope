@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite the versioned ClaimScope software archive and the original study by Peng et al."
+message: "Please cite ClaimScope and the original study by Peng et al."
 type: software
 title: "ClaimScope: Reproducible Repository-Level Reanalysis of Artifact-Size Reporting in Agentic Pull Requests"
 authors:
@@ -8,19 +8,11 @@ authors:
     affiliation: RISU Institute
 repository-code: https://github.com/risu-research/claimscope
 url: https://github.com/risu-research/claimscope
-version: 1.0.0
-doi: 10.5281/zenodo.24434117
-date-released: 2026-11-22
+version: 2.0.0
 license: MIT
 keywords:
-  - software engineering
   - coding agents
   - pull requests
-  - artifact-size reporting
-  - reproducibility
+  - software engineering
   - evidence provenance
-abstract: >-
-  An offline-reproducible reanalysis of published pull-request metrics,
-  repository composition, comment-boundary sensitivity, and public automated
-  artifact-size reporting. The included frozen evidence and provenance are
-  distinct from the unavailable historical source-study snapshot.
+  - finite-population inference

@@ -6,24 +6,29 @@
     }
   ],
   "title": "ClaimScope: Reproducible Repository-Level Reanalysis of Artifact-Size Reporting in Agentic Pull Requests",
-  "description": "Research software and reproducibility artifact for repository-level D6 metric analysis of 1,699 published performance pull requests. Includes hash-pinned source labels, source-linked Rspack audits, a 97-PR automated size-report census, a frozen 476-comment temporal metadata ledger, public-source match traces, deterministic replay scripts, and integrity tests. The original August 2026 private evidence snapshot is not included; historical inputs and contemporarily retrievable public GitHub records are distinguished. Third-party source labels, bot reports and original extractor code remain attributed to their sources and are governed by their original terms.",
+  "description": "Research software and reproducibility materials for an analysis of 1,699 pull requests across 440 repositories. The archive includes the pinned published labels, original metric detector, source-linked comment experiments, 823 PR report classifications, fixed probability sample, exact finite-population inference, and independent review tools. The archived public comment corpus supports offline detector replay. Additional source records have identifiers and digests for recovery and review. Third-party materials retain their respective rights; see THIRD_PARTY_NOTICES.md.",
   "upload_type": "software",
   "access_right": "open",
   "license": "mit",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "language": "eng",
   "keywords": [
     "software engineering",
     "coding agents",
     "reproducible research",
-    "pull request mining",
+    "pull requests",
     "artifact size",
-    "repository heterogeneity",
-    "GitHub evidence"
+    "evidence provenance",
+    "finite-population inference"
   ],
   "related_identifiers": [
     {
-      "identifier": "https://github.com/PurdueDualityLab/EMSE-perf-pr-study",
+      "identifier": "https://arxiv.org/abs/2610.03969v1",
+      "relation": "isDerivedFrom",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/PurdueDualityLab/EMSE-perf-pr-study/tree/64432e0b6ed7791bbfa929c6c183fc76c75b5d58",
       "relation": "isDerivedFrom",
       "scheme": "url"
     }

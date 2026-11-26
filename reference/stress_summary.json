@@ -1,0 +1,221 @@
+{
+  "adverse_relabeling": [
+    {
+      "definition": "Hypothetical endpoint-label changes, one edited observed PR per change; no empirical error-rate inference. Opposing endpoint can be adjusted consistently with nesting.",
+      "endpoint": "broad",
+      "first_failing_bound": 9.161448935527414,
+      "initial_bound": 8.695248469326947,
+      "last_surviving_bound": 8.695248469326947,
+      "minimum_adverse_relabels": 1,
+      "one_edit_bound": 9.161448935527414,
+      "side": "upper",
+      "target": 8.884832963310966,
+      "witness_cells": [
+        [
+          "agentic",
+          "no_published_positive_repo",
+          1
+        ]
+      ]
+    },
+    {
+      "definition": "Hypothetical endpoint-label changes, one edited observed PR per change; no empirical error-rate inference. Opposing endpoint can be adjusted consistently with nesting.",
+      "endpoint": "whole_artifact",
+      "first_failing_bound": -0.004850480474737312,
+      "initial_bound": 2.4921768679200307,
+      "last_surviving_bound": 0.4707737763623614,
+      "minimum_adverse_relabels": 5,
+      "one_edit_bound": 2.016552611082932,
+      "side": "lower",
+      "target": 0.0,
+      "witness_cells": [
+        [
+          "human_candidate",
+          "no_published_positive_repo",
+          5
+        ]
+      ]
+    }
+  ],
+  "freeze_outputs_verified": [
+    "negative_frame.csv",
+    "frozen_sample.csv",
+    "stratum_design.csv",
+    "design_summary.json",
+    "repository_inventory.csv"
+  ],
+  "independent_count_calculations": [
+    {
+      "CI_high": 8.226692055467323,
+      "CI_low": -3.9334624946991177,
+      "HT_high": 3.703837515371404,
+      "HT_low": 0.3716124013389174,
+      "arms": {
+        "agentic": {
+          "HTL": 107.57333333333334,
+          "HTU": 118.72666666666667,
+          "L": 105,
+          "N": 858,
+          "U": 142
+        },
+        "human_candidate": {
+          "HTL": 85.225,
+          "HTU": 102.31666666666666,
+          "L": 70,
+          "N": 841,
+          "U": 136
+        }
+      },
+      "endpoint": "broad",
+      "tail_denominator": 160
+    },
+    {
+      "CI_high": 8.695248469326947,
+      "CI_low": -4.2901806873269415,
+      "HT_high": 3.703837515371404,
+      "HT_low": 0.3716124013389174,
+      "arms": {
+        "agentic": {
+          "HTL": 107.57333333333334,
+          "HTU": 118.72666666666667,
+          "L": 105,
+          "N": 858,
+          "U": 145
+        },
+        "human_candidate": {
+          "HTL": 85.225,
+          "HTU": 102.31666666666666,
+          "L": 69,
+          "N": 841,
+          "U": 139
+        }
+      },
+      "endpoint": "broad",
+      "tail_denominator": 320
+    },
+    {
+      "CI_high": 8.811798585877064,
+      "CI_low": -4.646898879954766,
+      "HT_high": 3.703837515371404,
+      "HT_low": 0.3716124013389174,
+      "arms": {
+        "agentic": {
+          "HTL": 107.57333333333334,
+          "HTU": 118.72666666666667,
+          "L": 105,
+          "N": 858,
+          "U": 146
+        },
+        "human_candidate": {
+          "HTL": 85.225,
+          "HTU": 102.31666666666666,
+          "L": 69,
+          "N": 841,
+          "U": 142
+        }
+      },
+      "endpoint": "broad",
+      "tail_denominator": 480
+    },
+    {
+      "CI_high": 12.164727860328336,
+      "CI_low": 2.9678011247571296,
+      "HT_high": 9.41741502651134,
+      "HT_low": 6.085189912478854,
+      "arms": {
+        "agentic": {
+          "HTL": 103.39166666666667,
+          "HTU": 114.545,
+          "L": 103,
+          "N": 858,
+          "U": 136
+        },
+        "human_candidate": {
+          "HTL": 33.075,
+          "HTU": 50.166666666666664,
+          "L": 31,
+          "N": 841,
+          "U": 76
+        }
+      },
+      "endpoint": "whole_artifact",
+      "tail_denominator": 160
+    },
+    {
+      "CI_high": 12.514378209978686,
+      "CI_low": 2.4921768679200307,
+      "HT_high": 9.41741502651134,
+      "HT_low": 6.085189912478854,
+      "arms": {
+        "agentic": {
+          "HTL": 103.39166666666667,
+          "HTU": 114.545,
+          "L": 103,
+          "N": 858,
+          "U": 139
+        },
+        "human_candidate": {
+          "HTL": 33.075,
+          "HTU": 50.166666666666664,
+          "L": 31,
+          "N": 841,
+          "U": 80
+        }
+      },
+      "endpoint": "whole_artifact",
+      "tail_denominator": 320
+    },
+    {
+      "CI_high": 12.630928326528803,
+      "CI_low": 2.373270803710756,
+      "HT_high": 9.41741502651134,
+      "HT_low": 6.085189912478854,
+      "arms": {
+        "agentic": {
+          "HTL": 103.39166666666667,
+          "HTU": 114.545,
+          "L": 103,
+          "N": 858,
+          "U": 140
+        },
+        "human_candidate": {
+          "HTL": 33.075,
+          "HTU": 50.166666666666664,
+          "L": 31,
+          "N": 841,
+          "U": 81
+        }
+      },
+      "endpoint": "whole_artifact",
+      "tail_denominator": 480
+    },
+    {
+      "CI_high": 0.3766744551524575,
+      "CI_low": -12.489848637292157,
+      "HT_high": -4.413655211217637,
+      "HT_low": -7.745880325250123,
+      "arms": {
+        "agentic": {
+          "HTL": 4.181666666666667,
+          "HTU": 15.335,
+          "L": 2,
+          "N": 858,
+          "U": 42
+        },
+        "human_candidate": {
+          "HTL": 52.15,
+          "HTU": 69.24166666666666,
+          "L": 38,
+          "N": 841,
+          "U": 107
+        }
+      },
+      "endpoint": "broad_only",
+      "tail_denominator": 480
+    }
+  ],
+  "observed_broad_only_by_arm": {
+    "agentic": 2,
+    "human_candidate": 34
+  }
+}

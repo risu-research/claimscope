@@ -1,0 +1,135 @@
+{
+  "label_sha256": "c31616088cac4ea8d2369b942b78f08e39356250a0b452aba5c9402e05e070b9",
+  "cohort": [
+    115,
+    858,
+    38,
+    841
+  ],
+  "rspack": [
+    76,
+    88,
+    7,
+    9
+  ],
+  "other": [
+    39,
+    770,
+    31,
+    832
+  ],
+  "scan": [
+    {
+      "metric": "D0",
+      "rspack_shift": -0.04179035391877195,
+      "rspack_rank": 68,
+      "max_shift": 0.3791330049607904,
+      "second_shift": 0.3533097884495191
+    },
+    {
+      "metric": "D1",
+      "rspack_shift": 3.896226024272991,
+      "rspack_rank": 1,
+      "max_shift": 3.896226024272991,
+      "second_shift": 1.3101224754019096
+    },
+    {
+      "metric": "D2",
+      "rspack_shift": -0.416865635355529,
+      "rspack_rank": 3,
+      "max_shift": 0.6373071485550386,
+      "second_shift": 0.45511830085370286
+    },
+    {
+      "metric": "D3",
+      "rspack_shift": 3.6668171058034327,
+      "rspack_rank": 2,
+      "max_shift": 5.7693387066156925,
+      "second_shift": 3.6668171058034327
+    },
+    {
+      "metric": "D4",
+      "rspack_shift": -0.3871955432597527,
+      "rspack_rank": 2,
+      "max_shift": 0.5614104205653501,
+      "second_shift": 0.3871955432597527
+    },
+    {
+      "metric": "D5",
+      "rspack_shift": 0.36270482391172054,
+      "rspack_rank": 1,
+      "max_shift": 0.36270482391172054,
+      "second_shift": 0.36244518286974703
+    },
+    {
+      "metric": "D6",
+      "rspack_shift": 7.545859436837441,
+      "rspack_rank": 1,
+      "max_shift": 7.545859436837441,
+      "second_shift": 1.5880275095495051
+    },
+    {
+      "metric": "D7",
+      "rspack_shift": -0.11163393186282633,
+      "rspack_rank": 16,
+      "max_shift": 0.33209927327574396,
+      "second_shift": 0.2741763908787497
+    },
+    {
+      "metric": "D8",
+      "rspack_shift": 0.05252253691611597,
+      "rspack_rank": 8,
+      "max_shift": 0.11876450937093025,
+      "second_shift": 0.11848038617511264
+    },
+    {
+      "metric": "D9",
+      "rspack_shift": -0.5281996293440998,
+      "rspack_rank": 1,
+      "max_shift": 0.5281996293440998,
+      "second_shift": 0.4511988112720105
+    }
+  ],
+  "nodiff": [
+    107,
+    858,
+    34,
+    841
+  ],
+  "nodiff_rspack": [
+    76,
+    88,
+    7,
+    9
+  ],
+  "nodiff_gap": 8.428056287747133,
+  "nodiff_other_gap": 0.7807817182817179,
+  "shared_thresholds": {
+    "1": {
+      "repos": 84,
+      "gap": -0.15234292441606256
+    },
+    "2": {
+      "repos": 33,
+      "gap": 3.193485228208149
+    },
+    "3": {
+      "repos": 22,
+      "gap": 2.3328179222157366
+    },
+    "5": {
+      "repos": 14,
+      "gap": 0.1860032550569635
+    }
+  },
+  "reference_composition_shares": [
+    84.05680326754711,
+    76.56406375254346
+  ],
+  "bootstrap": {
+    "seed": 20261125,
+    "reps": 12000,
+    "p025": -1.8726661446030188,
+    "p975": 22.454354686724244
+  }
+}

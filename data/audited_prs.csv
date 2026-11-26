@@ -1,0 +1,824 @@
+repo_id,number,arm,published_D6,broad,whole_artifact,design,stratum,inclusion_numerator,inclusion_denominator
+2928944,56872,human_candidate,True,no_observed_report,no_observed_report,census,original_positive,1,1
+2928948,45412,human_candidate,True,no_observed_report,no_observed_report,census,original_positive,1,1
+3328572,19852,agentic,True,positive,positive,census,original_positive,1,1
+18068542,5610,agentic,True,no_observed_report,no_observed_report,census,original_positive,1,1
+23496542,9849,human_candidate,True,no_observed_report,no_observed_report,census,original_positive,1,1
+34526884,54455,human_candidate,True,positive,positive,census,original_positive,1,1
+41870517,916,human_candidate,True,no_observed_report,no_observed_report,census,original_positive,1,1
+42009758,38237,human_candidate,True,positive,positive,census,original_positive,1,1
+42009758,39309,agentic,True,positive,positive,census,original_positive,1,1
+42009758,39310,agentic,True,positive,positive,census,original_positive,1,1
+42009758,39314,agentic,True,positive,positive,census,original_positive,1,1
+42009758,42685,agentic,True,positive,positive,census,original_positive,1,1
+42009758,42686,agentic,True,positive,positive,census,original_positive,1,1
+42009758,42687,agentic,True,positive,positive,census,original_positive,1,1
+42009758,42688,agentic,True,positive,positive,census,original_positive,1,1
+42009758,42795,agentic,True,positive,positive,census,original_positive,1,1
+42009758,42862,agentic,True,positive,positive,census,original_positive,1,1
+46398090,16241,human_candidate,True,no_observed_report,no_observed_report,census,original_positive,1,1
+59370571,8648,agentic,True,no_observed_report,no_observed_report,census,original_positive,1,1
+70107786,79987,human_candidate,True,positive,positive,census,original_positive,1,1
+70107786,79991,human_candidate,True,positive,positive,census,original_positive,1,1
+70107786,79997,human_candidate,True,positive,positive,census,original_positive,1,1
+70107786,80326,human_candidate,True,positive,positive,census,original_positive,1,1
+70107786,80551,human_candidate,True,positive,positive,census,original_positive,1,1
+70107786,81459,human_candidate,True,positive,positive,census,original_positive,1,1
+70107786,84225,human_candidate,True,positive,positive,census,original_positive,1,1
+70107786,84270,human_candidate,True,positive,positive,census,original_positive,1,1
+70107786,86589,human_candidate,True,positive,positive,census,original_positive,1,1
+70107786,88336,human_candidate,True,positive,positive,census,original_positive,1,1
+70107786,89555,human_candidate,True,positive,positive,census,original_positive,1,1
+70107786,90868,human_candidate,True,positive,positive,census,original_positive,1,1
+70107786,92023,human_candidate,True,positive,positive,census,original_positive,1,1
+70107786,92628,human_candidate,True,positive,positive,census,original_positive,1,1
+77873947,11806,human_candidate,True,no_observed_report,no_observed_report,census,original_positive,1,1
+79375056,12338,human_candidate,True,positive,positive,census,original_positive,1,1
+92864511,246,agentic,True,no_observed_report,no_observed_report,census,original_positive,1,1
+101194285,11693,human_candidate,True,no_observed_report,no_observed_report,census,original_positive,1,1
+128479644,14029,human_candidate,True,positive,no_observed_report,census,original_positive,1,1
+139199684,20095,agentic,True,no_observed_report,no_observed_report,census,original_positive,1,1
+139199684,20096,agentic,True,no_observed_report,no_observed_report,census,original_positive,1,1
+204086862,13099,human_candidate,True,positive,positive,census,original_positive,1,1
+210716005,126169,human_candidate,True,unknown,unknown,census,original_positive,1,1
+210716005,126338,agentic,True,no_observed_report,no_observed_report,census,original_positive,1,1
+210716005,127178,agentic,True,positive,positive,census,original_positive,1,1
+224980941,301,agentic,True,no_observed_report,no_observed_report,census,original_positive,1,1
+239957242,874,agentic,True,positive,positive,census,original_positive,1,1
+240583093,12128,human_candidate,True,no_observed_report,no_observed_report,census,original_positive,1,1
+262395224,32420,agentic,True,no_observed_report,no_observed_report,census,original_positive,1,1
+265001214,3657,agentic,True,no_observed_report,no_observed_report,census,original_positive,1,1
+305438235,409,agentic,True,no_observed_report,no_observed_report,census,original_positive,1,1
+314197645,3375,agentic,True,no_observed_report,no_observed_report,census,original_positive,1,1
+314230339,84,agentic,True,no_observed_report,no_observed_report,census,original_positive,1,1
+440017777,218,agentic,True,no_observed_report,no_observed_report,census,original_positive,1,1
+449656810,2166,agentic,True,no_observed_report,no_observed_report,census,original_positive,1,1
+501095512,3389,human_candidate,True,unknown,unknown,census,original_positive,1,1
+520315548,138,agentic,True,no_observed_report,no_observed_report,census,original_positive,1,1
+573661753,12733,human_candidate,True,no_observed_report,no_observed_report,census,original_positive,1,1
+599431918,12709,agentic,True,no_observed_report,no_observed_report,census,original_positive,1,1
+642497346,7585,agentic,True,no_observed_report,no_observed_report,census,original_positive,1,1
+674225653,1535,agentic,True,no_observed_report,no_observed_report,census,original_positive,1,1
+701494311,3595,agentic,True,positive,positive,census,original_positive,1,1
+722597620,449,agentic,True,no_observed_report,no_observed_report,census,original_positive,1,1
+775743011,2311,human_candidate,True,no_observed_report,no_observed_report,census,original_positive,1,1
+825888299,135,agentic,True,no_observed_report,no_observed_report,census,original_positive,1,1
+923332984,1250,agentic,True,no_observed_report,no_observed_report,census,original_positive,1,1
+923332984,1348,agentic,True,no_observed_report,no_observed_report,census,original_positive,1,1
+923332984,1355,agentic,True,no_observed_report,no_observed_report,census,original_positive,1,1
+939393745,1385,agentic,True,positive,positive,census,original_positive,1,1
+939393745,2352,agentic,True,positive,positive,census,original_positive,1,1
+1002608585,7,agentic,True,no_observed_report,no_observed_report,census,original_positive,1,1
+476642602,12560,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13010,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13020,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13024,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13068,human_candidate,True,positive,positive,census,original_positive,1,1
+476642602,13069,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13130,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13131,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13133,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13142,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13143,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13158,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13191,human_candidate,True,positive,positive,census,original_positive,1,1
+476642602,13227,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13228,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13229,human_candidate,True,positive,positive,census,original_positive,1,1
+476642602,13243,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13272,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13306,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13309,human_candidate,True,positive,positive,census,original_positive,1,1
+476642602,13338,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13478,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13490,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13493,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13495,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13501,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13509,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13513,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13535,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13536,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13545,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13556,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13564,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13566,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13578,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13579,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13581,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13609,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13617,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13631,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13634,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13646,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13647,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13662,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13668,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13674,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13759,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13774,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13787,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13788,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13806,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13808,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13821,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13841,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13851,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13858,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13859,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13873,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13876,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13926,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13936,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13951,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13955,agentic,True,positive,positive,census,original_positive,1,1
+476642602,13990,agentic,True,positive,positive,census,original_positive,1,1
+476642602,14013,agentic,True,positive,positive,census,original_positive,1,1
+476642602,14014,agentic,True,positive,positive,census,original_positive,1,1
+476642602,14019,agentic,True,positive,positive,census,original_positive,1,1
+476642602,14020,agentic,True,positive,positive,census,original_positive,1,1
+476642602,14041,agentic,True,positive,positive,census,original_positive,1,1
+476642602,14042,agentic,True,positive,positive,census,original_positive,1,1
+476642602,14075,agentic,True,positive,positive,census,original_positive,1,1
+476642602,14097,agentic,True,positive,positive,census,original_positive,1,1
+476642602,14103,human_candidate,True,positive,positive,census,original_positive,1,1
+476642602,14148,agentic,True,positive,positive,census,original_positive,1,1
+476642602,14149,agentic,True,positive,positive,census,original_positive,1,1
+476642602,14164,agentic,True,positive,positive,census,original_positive,1,1
+476642602,14172,agentic,True,positive,positive,census,original_positive,1,1
+476642602,14186,human_candidate,True,positive,positive,census,original_positive,1,1
+476642602,14196,agentic,True,positive,positive,census,original_positive,1,1
+476642602,14205,agentic,True,positive,positive,census,original_positive,1,1
+476642602,14209,human_candidate,True,positive,positive,census,original_positive,1,1
+476642602,14229,agentic,True,positive,positive,census,original_positive,1,1
+476642602,14242,agentic,True,positive,positive,census,original_positive,1,1
+476642602,10648,human_candidate,False,no_observed_report,no_observed_report,census,rspack_original_negative,1,1
+476642602,10677,agentic,False,no_observed_report,no_observed_report,census,rspack_original_negative,1,1
+476642602,11179,human_candidate,False,positive,positive,census,rspack_original_negative,1,1
+476642602,11320,agentic,False,positive,positive,census,rspack_original_negative,1,1
+476642602,12058,agentic,False,positive,positive,census,rspack_original_negative,1,1
+476642602,13714,agentic,False,positive,positive,census,rspack_original_negative,1,1
+476642602,13842,agentic,False,positive,positive,census,rspack_original_negative,1,1
+476642602,13854,agentic,False,positive,positive,census,rspack_original_negative,1,1
+476642602,13932,agentic,False,no_observed_report,no_observed_report,census,rspack_original_negative,1,1
+476642602,13935,agentic,False,positive,positive,census,rspack_original_negative,1,1
+476642602,13968,agentic,False,positive,positive,census,rspack_original_negative,1,1
+476642602,13973,agentic,False,positive,positive,census,rspack_original_negative,1,1
+476642602,13975,agentic,False,positive,positive,census,rspack_original_negative,1,1
+476642602,14101,agentic,False,positive,positive,census,rspack_original_negative,1,1
+3328572,17229,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,known_report_repo,6,6
+34526884,55611,agentic,False,positive,positive,C1 stratified negative sample,known_report_repo,6,6
+42009758,39214,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,known_report_repo,6,6
+42009758,39315,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,known_report_repo,6,6
+70107786,80415,human_candidate,False,positive,positive,C1 stratified negative sample,known_report_repo,10,10
+70107786,81411,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,known_report_repo,10,10
+70107786,81994,human_candidate,False,positive,positive,C1 stratified negative sample,known_report_repo,10,10
+70107786,82654,human_candidate,False,positive,positive,C1 stratified negative sample,known_report_repo,10,10
+70107786,86338,human_candidate,False,positive,positive,C1 stratified negative sample,known_report_repo,10,10
+70107786,88708,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,known_report_repo,10,10
+70107786,94192,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,known_report_repo,10,10
+70107786,94201,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,known_report_repo,10,10
+79375056,12246,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,known_report_repo,10,10
+204086862,13876,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,known_report_repo,10,10
+701494311,2467,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,known_report_repo,6,6
+939393745,1743,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,known_report_repo,6,6
+1644196,61930,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+442321089,1108,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+32051890,13686,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+14268809,2011,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+32944298,8591,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+151148482,7227,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+550054675,9105,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+136202695,17732,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+675859069,1238,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+116150224,1140,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+923332984,952,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+923332984,854,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+599431918,12884,agentic,False,unknown,unknown,C1 stratified negative sample,other_positive_repo,120,167
+440017777,680,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+440017777,677,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+92864511,247,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+305438235,228,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+440017777,678,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+599431918,22578,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+599431918,12776,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+105997676,8143,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+136202695,23149,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+237222619,2810,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+92974124,8605,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+808266543,5375,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+115110181,10196,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+436658287,6700,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+701547123,21947,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+29078997,79810,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+327696712,6134,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+128479644,12845,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,11650,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,9338,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+599431918,17379,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+101194285,11675,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+599431918,20189,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+210716005,122167,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+139199684,20900,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+18068542,5864,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+210716005,127845,human_candidate,False,unknown,unknown,C1 stratified negative sample,other_positive_repo,120,176
+381857226,10718,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+573411360,957,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+13908616,3428,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+25780780,2281,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+305144746,16183,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+612354784,23915,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+71932349,63075,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+400215964,10665,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+234231371,3687,agentic,False,unknown,unknown,C1 stratified negative sample,no_published_positive_repo,200,558
+445862991,181,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+599431918,22081,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+599431918,22588,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+2928944,54006,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,127123,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+139199684,20487,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+265001214,3422,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+599431918,22602,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,126201,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+265001214,3532,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,128504,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+422711680,5269,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+156939672,25003,human_candidate,False,unknown,unknown,C1 stratified negative sample,no_published_positive_repo,200,615
+89221572,9969,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+336102115,7387,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+1644196,59965,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+172370867,7808,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+65080725,7917,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+115110181,10817,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+844738531,2218,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+614765452,13047,human_candidate,False,unknown,unknown,C1 stratified negative sample,no_published_positive_repo,200,615
+128479644,10276,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+599431918,21339,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,11407,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+240583093,12182,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,11726,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,14290,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+210716005,116175,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+210716005,117531,human_candidate,False,unknown,unknown,C1 stratified negative sample,other_positive_repo,120,176
+128479644,10260,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+599431918,12138,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+32944298,7863,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+32944298,9194,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+197336679,634,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+6860771,3542,agentic,False,positive,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+172404626,47,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+7243421,1977,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+121814210,7374,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+237392204,9655,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+136202695,22668,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+116150224,1069,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+101194285,9208,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+305438235,199,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+139199684,20972,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+101194285,10232,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,127779,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+305438235,537,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,122389,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+101194285,9943,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+305438235,286,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,120633,agentic,False,positive,positive,C1 stratified negative sample,other_positive_repo,120,167
+4127088,46572,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+238797860,16276,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+708452754,919,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+650377372,6883,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+537233603,21408,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+575321313,2013,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+100061716,33753,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+701547123,21019,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+10458362,6886,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+238797860,16420,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+599431918,13419,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,13902,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+599431918,16835,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+599431918,20249,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+23496542,6892,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+101194285,8661,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+23496542,8444,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+599431918,21811,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+599431918,11698,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+599431918,22610,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+105363726,2688,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+575865240,3246,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+749681472,2255,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+391740664,26485,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+598846021,937,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+136202695,22468,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+121814210,7633,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+136202695,16039,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+63984307,49424,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+121814210,7375,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+599431918,18454,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+101194285,11241,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+440017777,684,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+923332984,359,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,122749,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+599431918,12847,agentic,False,unknown,unknown,C1 stratified negative sample,other_positive_repo,120,167
+210716005,124705,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+599431918,12765,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+128479644,16009,agentic,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+520315548,134,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+537233603,23617,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+808266543,3933,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+665613753,1702,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+395140743,6948,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+676672661,7426,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+523043277,24057,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+959682770,3827,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+15337142,18691,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+351806852,12118,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+701547123,23539,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+599431918,21020,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+101194285,11007,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+314197645,3684,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,12816,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+210716005,122107,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+599431918,11423,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,13546,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+139199684,22111,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,10062,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+210716005,124878,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+102692863,7820,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+136202695,17860,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+32051890,12690,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+14268809,1986,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+645180041,973,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+185841694,1689,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+845317529,2471,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+20849145,58,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+523043277,24625,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+537233603,23199,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+923332984,794,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+722597620,461,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,126841,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+139199684,20453,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+224980941,300,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+599431918,12599,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+599431918,12768,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+440017777,693,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+599431918,12852,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+305438235,400,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+295810364,3864,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+65711522,74684,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+115110181,10606,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+196414933,48742,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+612354784,23402,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+4743255,4697,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+32051890,12151,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+66497320,4833,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+537233603,23792,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+453068084,22069,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+128479644,10174,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+77873947,11312,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+599431918,12093,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+2928948,48617,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,12868,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,15209,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,12879,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+23496542,7238,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+599431918,21709,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+210716005,128470,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+17496194,3342,agentic,False,unknown,unknown,C1 stratified negative sample,no_published_positive_repo,200,558
+28829926,2600,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+241248985,3409,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+537233603,22348,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+234231371,3996,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+650377372,6642,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+583528771,574,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+893798089,61,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+701547123,25066,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+136202695,19196,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+599431918,18175,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+440017777,682,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,123754,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+265001214,3401,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,120886,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+599431918,22600,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+923332984,772,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,126801,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+262395224,31015,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+18068542,5948,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+929338255,442,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+349372179,20288,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+117757315,5826,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+143040428,21816,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+572984571,19253,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+395140743,6879,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+74627617,37279,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+126257942,5533,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+821360765,2081,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+537233603,22786,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+599431918,21622,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+210716005,117381,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,14853,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+599431918,14695,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+599431918,12778,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+599431918,19851,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+23496542,7569,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+722597620,3069,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+210716005,118108,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,15599,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+29048891,19072,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+65080725,5654,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+749681472,3569,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+788715163,427,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+121814210,7249,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+749681472,2978,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+249027166,12979,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+655181249,1657,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+156939672,25061,agentic,False,unknown,unknown,C1 stratified negative sample,no_published_positive_repo,200,558
+88064357,1902,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+599431918,22694,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+305438235,523,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+923332984,855,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+139199684,20930,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,120627,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,125650,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+305438235,321,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,123034,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+599431918,18584,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,118207,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+18280236,3813,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+65711522,78267,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+62774726,15502,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+846923721,496,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+742623962,606,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+72477752,22422,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+1644196,60851,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+776121034,2818,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+552661142,31659,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+828285248,3752,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+128479644,12955,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+210716005,122090,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+101194285,11297,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+240583093,11747,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,14475,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,15403,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+101194285,9581,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+210716005,128559,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+23496542,9138,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+46398090,16938,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+156260788,5638,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+122162,52,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+2030681,20627,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+643978507,2144,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+945896114,2101,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+32944298,9029,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+72041948,366,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+537233603,22350,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+701547123,25070,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+214771811,79,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+18068542,5947,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+599431918,22601,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,124647,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+18068542,5944,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,126671,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+923332984,1249,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+923332984,1062,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,124667,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+923332984,749,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+23496542,10150,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+5298790,26686,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+537233603,22567,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+945896114,1040,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+349372179,21313,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+525592995,8197,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+828285248,3641,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+422711680,5574,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+1644196,61225,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+537233603,23507,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+537233603,23926,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+501095512,3595,human_candidate,False,unknown,unknown,C1 stratified negative sample,other_positive_repo,120,176
+599431918,12521,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,10295,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,15728,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,13370,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,13221,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+599431918,10242,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+599431918,20312,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+101194285,11323,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+210716005,118640,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+537233603,22486,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+93882897,7714,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+136202695,18882,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+17496194,3341,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+456470362,3321,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+571475096,261,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+4127088,45937,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+701547123,25194,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+144407057,43,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+219035799,1782,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+139199684,22060,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+262395224,32447,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+923332984,783,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,119095,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+265001214,3393,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+923332984,1069,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,125028,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+923332984,852,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+599431918,13098,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+101194285,10590,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+575865240,6532,human_candidate,False,positive,positive,C1 stratified negative sample,no_published_positive_repo,200,615
+612354784,19780,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+89221572,11351,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+612354784,23083,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+664013991,1505,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+257098489,1109,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+765083837,4951,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+537233603,21780,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+537233603,23892,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+537233603,21835,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+128479644,11731,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+262395224,31391,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,10129,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+240583093,10344,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+262395224,32382,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+599431918,16630,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+210716005,117989,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,12882,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+599431918,12329,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+210716005,126658,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+32051890,12030,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+14268809,2019,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+336102115,6310,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+720209383,1675,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+163654595,3704,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+121814210,7369,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+400215964,11360,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+749681472,2267,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+93882897,10803,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+881458615,2958,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+599431918,22669,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,127329,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+440017777,683,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+139199684,22122,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+923332984,1304,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+599431918,18921,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+2928944,56680,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+265001214,3484,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+599431918,12735,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,128228,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+29078997,82447,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+19961085,16312,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+528799794,6580,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+537233603,17388,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+365739812,8778,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+808266543,6243,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+749681472,2535,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+537233603,22127,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+126257942,5821,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+151331938,13727,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+210716005,125799,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+599431918,19543,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,11307,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+240583093,9629,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+599431918,12056,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,14875,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+599431918,17797,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,12881,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+599431918,14630,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+210716005,118029,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+29078997,80734,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+29078997,82948,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+622646426,686,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+237392204,9384,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+645180041,974,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+136202695,22670,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+213728552,522,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+164374484,800,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+581186630,89,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+3292397,671,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+210716005,124172,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+305438235,346,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+599431918,12694,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+305438235,460,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+139199684,20454,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,128505,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,124450,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,122947,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+923332984,1092,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+599431918,14802,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+537233603,21645,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+808266543,6245,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+23247808,2634,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+537233603,23181,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+537233603,22724,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+65711522,73054,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+151331938,13982,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+413918947,11915,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+32051890,12065,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+166515022,26168,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+599431918,20509,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+599431918,22438,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+599431918,20318,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,10977,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+101194285,11673,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+210716005,121223,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,15512,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+101194285,9627,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,11445,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,13794,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+121814210,7372,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+263364731,883,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+26785339,5636,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+722184017,2113,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+792160692,82,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+381857226,10446,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+164374484,798,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+19330736,7173,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+30932325,7279,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+267563398,940,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+210716005,128630,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,123041,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,125722,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+139199684,20450,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+599431918,14397,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+305438235,657,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,122956,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,120916,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+599431918,22598,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+210716005,121851,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,167
+413794983,2221,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+701547123,22982,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+701547123,24956,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+274495425,5228,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+126897385,3117,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+255027515,978,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+481206475,1005,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+5108051,28374,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+166515022,28512,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+537233603,23543,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+128479644,13700,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+210716005,116419,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,14598,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,13401,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+23496542,10414,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,13825,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+101194285,10520,human_candidate,False,unknown,unknown,C1 stratified negative sample,other_positive_repo,120,176
+128479644,12628,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+128479644,15690,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+23496542,9021,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,other_positive_repo,120,176
+634043200,6245,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+946174307,1274,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+828119367,1155,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+381857226,9551,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+633927609,3046,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+136202695,17697,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+65080725,6162,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+780660899,1131,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+136202695,17769,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+942771284,1535,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+71932349,53939,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+914053359,1937,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+305144746,15490,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+32148604,11207,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+43441403,26270,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+29078997,82165,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+410897288,3500,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+808266543,4203,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+537233603,23660,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+15730865,52157,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+959682770,792,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+509028,5245,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+442321089,1868,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+136202695,22758,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+32051890,11953,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+197153676,20663,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+151148482,7245,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+10458362,7090,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+460125865,3058,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+571475096,234,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+897595329,726,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+523043277,20128,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+27185284,6402,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+413918947,11965,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+115110181,10676,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+537233603,16836,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+29078997,83708,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+612354784,20525,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+336102115,6340,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+15337142,19094,human_candidate,False,positive,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+887571250,509,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+213728552,469,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+159564733,12368,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+11965691,1224,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+442321089,1908,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+978331188,54,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+586920414,9575,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+1644196,61826,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+1644196,61943,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+234231371,4373,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+612354784,22812,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+36385798,9894,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+828285248,3539,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+752940677,484,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+952097046,628,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+130688011,6325,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+537233603,23300,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+678526156,9691,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+638951438,6713,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+238797860,19993,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+136202695,19190,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+29078997,80744,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+257089738,590,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+62162299,634,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+634043200,6633,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+170592186,13031,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+765938063,1665,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+220517730,4999,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+151148482,7196,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+121814210,7309,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+89221572,11423,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+305144746,16104,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+718314761,1762,human_candidate,False,unknown,unknown,C1 stratified negative sample,no_published_positive_repo,200,615
+212465715,4505,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+29078997,81948,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+184456251,42273,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+349372179,21627,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+1644196,61753,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+27085821,4952,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+511003180,2051,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+136202695,19258,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+132021166,7580,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+814684486,2400,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+25780780,2279,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+537233603,18072,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+436466520,9067,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+744218577,71,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+48009214,14756,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+219012610,12540,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+32944298,7710,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+151331938,14748,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+203843667,27423,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+32051890,11959,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+166515022,27849,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+934959044,104,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+11183126,2004,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+612354784,18096,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+828285248,3858,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+453068084,25764,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+651622038,1541,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+634043200,6229,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+601303277,1749,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+537233603,23295,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+442321089,2044,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+115110181,11879,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+537233603,22353,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+699532645,19383,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+381857226,9184,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+17620347,62661,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+142308181,913,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+959682770,3815,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+775839592,2144,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+413918947,11887,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+65711522,78733,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+775839592,5635,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+11183126,1061,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+32051890,11918,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+526156868,966,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+946174307,1531,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+742623962,401,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+948174507,97,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+237392204,9656,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+151148482,7167,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+749681472,2253,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+32944298,9215,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+136202695,18980,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+460609164,902,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+14268809,2025,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+121814210,7367,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+509028,5478,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+808266543,6548,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+537233603,21920,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+196414933,47183,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+464630029,5140,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+634043200,4645,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+4454793,31435,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+867014724,378,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+208102250,4470,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+215654064,9292,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+257098489,1106,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+749681472,2266,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+50448254,1613,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+241248985,3490,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+14268809,1996,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+400215964,10698,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+11183126,1393,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+121814210,7402,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+76990209,5519,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+32051890,12401,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+828285248,2252,agentic,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,558
+28232663,10071,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+537233603,22401,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+71932349,59190,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+612354784,21443,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+860100131,1823,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+2751199,9478,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+879168187,689,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+172370867,6961,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+612354784,22821,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615
+828285248,3760,human_candidate,False,no_observed_report,no_observed_report,C1 stratified negative sample,no_published_positive_repo,200,615

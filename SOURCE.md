@@ -1,27 +1,20 @@
-# Source and provenance
+# Source identities
 
-Source study: Huiyun Peng, Ricardo Calvo, Kelechi G. Kalu, and James C. Davis, *How Do Coding Agents Optimize Software and Report Performance Validation?*, 2026. [arXiv:2610.03969](https://arxiv.org/abs/2610.03969).
+Source study: Huiyun Peng, Ricardo Calvo, Kelechi Kalu, and James C. Davis, *How Do Coding Agents Optimize Software and Report Performance Validation? A Large-Scale Empirical Study of Open-Source Pull Requests*, 2026. [arXiv:2610.03969v1](https://arxiv.org/abs/2610.03969v1).
 
-Public source repository: [PurdueDualityLab/EMSE-perf-pr-study](https://github.com/PurdueDualityLab/EMSE-perf-pr-study).
+Original [replication package](https://github.com/PurdueDualityLab/EMSE-perf-pr-study/tree/64432e0b6ed7791bbfa929c6c183fc76c75b5d58), pinned to `64432e0b6ed7791bbfa929c6c183fc76c75b5d58`.
 
-Pinned commit: `64432e0b6ed7791bbfa929c6c183fc76c75b5d58`.
+- [Label export](https://github.com/PurdueDualityLab/EMSE-perf-pr-study/blob/64432e0b6ed7791bbfa929c6c183fc76c75b5d58/analysis/classification_labels/rq3_labels.csv): 649,030 bytes; SHA-256 `c31616088cac4ea8d2369b942b78f08e39356250a0b452aba5c9402e05e070b9`.
+- [Label documentation](https://github.com/PurdueDualityLab/EMSE-perf-pr-study/blob/64432e0b6ed7791bbfa929c6c183fc76c75b5d58/analysis/classification_labels/README.md) and [manifest](https://github.com/PurdueDualityLab/EMSE-perf-pr-study/blob/64432e0b6ed7791bbfa929c6c183fc76c75b5d58/analysis/classification_labels/manifest.json).
+- [Corpus assembly](https://github.com/PurdueDualityLab/EMSE-perf-pr-study/blob/64432e0b6ed7791bbfa929c6c183fc76c75b5d58/analysis/rq3_pattern_and_validation/run_current.py), [metric extractor](https://github.com/PurdueDualityLab/EMSE-perf-pr-study/blob/64432e0b6ed7791bbfa929c6c183fc76c75b5d58/analysis/rq3_pattern_and_validation/extract_metrics.py), and [metric patterns](https://github.com/PurdueDualityLab/EMSE-perf-pr-study/blob/64432e0b6ed7791bbfa929c6c183fc76c75b5d58/analysis/rq3_pattern_and_validation/metric_patterns.py).
+- [Original reproduction guide](https://github.com/PurdueDualityLab/EMSE-perf-pr-study/blob/64432e0b6ed7791bbfa929c6c183fc76c75b5d58/REPRODUCING.md) describes the restricted August 2026 snapshot.
 
-Source file: [`analysis/classification_labels/rq3_labels.csv`](https://github.com/PurdueDualityLab/EMSE-perf-pr-study/blob/64432e0b6ed7791bbfa929c6c183fc76c75b5d58/analysis/classification_labels/rq3_labels.csv).
+The two detector modules in `code/upstream/` are byte-identical to the pinned blobs. The replay loads the metric function and its helper functions directly from the original source, bypassing dataset-loading dependencies. It uses the original normalizer, tokenization, pattern matching and match positions.
 
-| Integrity field | Expected value |
-| --- | --- |
-| Source bytes | 649030 |
-| CSV rows | 2081 |
-| In-metric-layer rows | 1699 |
-| Git blob SHA-1 | `136a2cf5bf1a9a71f06f2a7c6c9932194865c854` |
-| File SHA-256 | `c31616088cac4ea8d2369b942b78f08e39356250a0b452aba5c9402e05e070b9` |
+## Public source evidence
 
-Primary row filter: `in_metric_layer == True`.
+`thread_inventory.json` contains the recorded PR/comment identities, ordering, eligibility, account type, timestamps, body hashes, and collection-completeness status. The inventory has 2,886 comments, of which 2,850 meet the cutoff. `replay_threads.json` preserves 508 eligible comment bodies from 102 threads required for the paper's issue-comment experiments. One signed URL segment has an equal-length placeholder; the original body digest and redacted digest appear together, and the individual and joined normalized detector inputs were verified identical before and after replacement. Third-party text remains attributed through the original comment URLs.
 
-Primary key: `(repo_id, number)`. Study arm: `sample_arm`. Artifact-size flag: `D6`. Code-diff exclusion variant: `D6_nodiff`. Category: `pattern`.
+The earlier [v1.0.0 archive](https://doi.org/10.5281/zenodo.24434117) covers the original-label analyses and earlier source-channel investigation. Its [five-channel audit code](https://github.com/risu-research/claimscope/blob/4a20b2a071b586e1b6934f2140001fdc6b267d27/code/audit_rspack65_other_sources.py) and [recorded results](https://github.com/risu-research/claimscope/blob/4a20b2a071b586e1b6934f2140001fdc6b267d27/results/rspack65_other_source_replay.json) document the five other channels for the 65 boundary-dependent Rspack PRs. The new `data/census_replay.csv` records the observed channel results and coverage flag from the later collection. All 65 have issue comments as the sole positive channel; 64 have clean collection status in that later record. PR 13020 retains a coverage exception. The earlier replay and the later collection represent distinct public observations. The expanded `evidence/channel_summary.csv` and `evidence/channel_records.csv` retain six channels for each of those 65 Rspack PRs and Valkey PR 2311: 396 channel summaries and 1,477 individual record digests, including 1,149 records outside issue comments. The recorded detector results contain zero D6 matches in the other five channels. The exception for Rspack PR 13020 consists of two retrieved inline comments against a metadata count of one. A later public-source check on November 25, 2026 returned the same two inline comment bodies by SHA-256, along with 39 issue-comment bodies across the selected public threads. `evidence/public_source_recheck.csv` records these 41 body-digest comparisons. This check preserves the original coverage exception.
 
-Rspack repository ID: `476642602`, corresponding to `web-infra-dev/rspack`.
-
-The original source repository carries an MIT license. Its license text is preserved in [`data/UPSTREAM_LICENSE`](data/UPSTREAM_LICENSE). Cite the Peng et al. study when reusing the label export.
-
-The source dataset's `human_candidate` label records a comparison cohort. `D6` is an extracted reporting signal. The original PR-level source-match spans, `dim_sources`, and `dims_from_bot_comments` were excluded from the compact CSV distribution.
+The channel inventory records the previous experiment; offline body-level replay of the other five channels requires matching source text. `code/fetch_sources.py --channels` retrieves the recorded channels, compares body and joined digests, and replays a channel when the joined digest matches. Current workflow-run retrieval uses the archived run IDs; it verifies those names and leaves the current run population outside its coverage. Source access, edits and API responses can limit recovery.
